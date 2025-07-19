@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" as="image" href="/images/hero_bg.webp" fetchpriority="high"> 
+    <title>BananaBay</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet"  href="css/intlTelInput.min.css" />
+    <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/form.css">  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <img src="images/logo.svg" alt="" class="header__logo" loading="lazy">
+            <ul class="header__menu">
+                <li class="header__menu_item"><a href="locations.html">Участки</a></li>
+                <li class="header__menu_item"><a href="#about">О Сумбаве</a></li>
+                <li class="header__menu_item"><a href="#investment">Инвесторам</a></li>
+                <li class="header__menu_item"><a href="#advantages">Преимущества</a></li>
+                <li class="header__menu_item"><a href="#contacts">Контакты</a></li>
+            </ul>
+            <div class="header__end">
+                <button class="subscribe" id="openPopup">
+                    Связаться с нами
+                </button>
+                <p class="lang">RU</p>
+            </div>
+            <img src="images/burger.webp" class="header__burger" alt="" loading="lazy">
+        </header>
+        <aside class="sidebar">
+            <div class="sidebar__inner">
+                <div class="sidebar__inner_head">
+                <img src="images/logo.svg" alt="Banana Bay" class="sidebar__logo" loading="lazy">
+                <img src="images/closeMenu.webp" class="sidebar__close" alt="" loading="lazy">
+                </div>
+                <ul class="sidebar__nav">
+                    <li class="sidebar__item"><a href="locations.html">Участки</a></li>
+                    <li class="sidebar__item"><a href="#about">О Сумбаве</a></li>
+                    <li class="sidebar__item"><a href="#investment">Инвесторам</a></li>
+                    <li class="sidebar__item"><a href="#advantages">Преимущества</a></li>
+                    <li class="sidebar__item"><a href="#contacts">Контакты</a></li>
+                </ul>
+
+                <button class="sidebar__cta subscribe main__btn">Связаться с нами</button>
+
+                <address class="sidebar__contacts">
+                    <p class="sidebar__contacts_yellow">PT PMA<br><br>Banana Bay Sumbawa</p><br><br>
+                    <a href="mailto:mail@bananabay.com">mail@bananabay.com</a><br>
+                    <a href="tel:+12111111111">+ 12 111 1111 111</a>
+                </address>
+
+                <div class="sidebar__social">
+                    <a href=""><img src="images/fbLight.webp" alt="" loading="lazy"></a>
+                    <a href="https://www.instagram.com/bananabaysumbawa/"><img src="images/instLight.webp" alt="" loading="lazy"></a>
+                    <a href=""><img src="images/wpLight.webp" alt="" loading="lazy"></a>
+                    <a href=""><img src="images/ytLight.webp" alt="" loading="lazy"></a>
+                    <a href="https://t.me/sumbawaland"><img src="images/tgLight.webp" alt="" loading="lazy"></a>
+                </div>
+
+                <p class="sidebar__copy">All Rights Reserved. 2025</p>
+                <p class="sidebar__madeBy">
+                    Website made by <a href="http://toster-media.online/">Toster Media</a>
+                </p>
+            </div>
+        </aside>
+        <div class="hero">
+            <img src="images/hero_bg.webp" loading="lazy" fetchpriority="high" class="hero__bg" alt="">
+            <div class="hero__top">
+                <h1 class="hero__top_title">Видовые участки у океана</h1>
+                <div class="hero__top_right">
+                    <p>Самый привлекательный инвестиционный остров в <span>Индонезии</span></p>
+                    <a href="locations.html" class="main__btn hero_top_btn">
+                        Выбрать участок
+                    </a>
+                </div>
+            </div>
+            <div class="hero__advants">
+                <div class="hero__advants_item">
+                    <img src="images/advant1.webp" alt="" loading="lazy">
+                    <p>Открытие аэропорта Киантар в 2025 году</p>
+                </div>
+                <div class="hero__advants_item">
+                    <img src="images/advant2.webp" alt="" loading="lazy">
+                    <p>За последние 4 года, цены на землю выросли в 3 раза</p>
+                </div>
+                <div class="hero__advants_item">
+                    <img src="images/advant3.webp" alt="" loading="lazy">
+                    <p>Заработок на туристах и бизнес-клиентах Amman Mineral</p>
+                </div>
+            </div>
+            <a href="locations.html" class="main__btn hero_bottom_btn">
+                Выбрать участок
+            </a>
+            <a href="#locations" class="hero__scroll">
+                <img src="images/arrow_down.webp" alt="Прокрутить" class="hero__scroll_img" loading="lazy">
+            </a>
+        </div>
+
+        <div class="map" id="locations">
+            <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="map__text" target="_blank">3D модель</a>
+            <div class="map-card">
+                <picture class="box">
+                    <source srcset="images/map-mobile.webp" media="(max-width: 767px)" type="image/webp">
+                    <img src="images/map.webp" alt="Карта" loading="lazy">
+                </picture>
+                
+                <div class="cta">
+                    <a href="locations.html" class="main__btn">Выбрать участок</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="why" id="about">
+            <h2 class="title__dark">Чем интересна Сумбава?</h2>
+            <div class="why__content">
+            <div class="why__left">
+                <div class="second-card">
+                    <div class="box">
+                        <h3>Спокойствие</h3>
+                        <p> Сумбава - это остров уединения, природной красоты и простора.Здесь вы найдёте пустынные пляжи, минимальный дорожный трафик и спокойный ритм жизни. Это идеальное место для строительства дома мечты - будь то уединённое ранчо, просторная вилла или уютное семейное жильё.</p>
+                    </div>
+                    
+                    <div class="cta">
+                    <img src="images/home.png" alt="" loading="lazy">
+                    </div>
+                </div>
+                <div class="second-card">
+                    <div class="box">
+                        <h3>Серфинг мирового уровня</h3>
+                        <p>Остров предлагает уникальные споты с чистыми волнами и стабильными условиями, подходящими как для профессионалов, так и для начинающих. Без излишней туристической нагрузки, Сумбава позволяет сосредоточиться на океане, практике и настоящем ощущении свободы.</p>
+                    </div>
+                    
+                    <div class="cta">
+                    <img src="images/serf.png" alt="" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="why__right">
+                <img src="images/serfer.webp" loading="lazy" class="why__right_bg" alt="">
+                <p class="why__right_txt">Остров окружён потрясающими пейзажами: горы, пляжи, океан. Это место вдохновляет и позволяет жить в гармонии с природой</p>
+            </div>
+            </div>
+        </div>
+    </div>
+        <div class="investors" id="investment">
+            <h2 class="title__dark">Почему <span>инвесторам</span> интересна Западная Сумбава</h2>
+            <div class="investors__cards">
+                <div class="investors__cards_item">
+                    <h3>Растущий спрос при минимальной конкуренции</h3>
+                    <p>Инфраструктура развита частично, жильё и гостиницы - в среднем сегменте. Конкуренция низкая</p>
+                </div>
+                <div class="investors__cards_item">
+                    <h3>Экономика, не зависящая исключительно от туризма</h3>
+                    <p>Ведущую роль играет Amman Mineral, вокруг которой формируется экосистема подрядчиков и сервисных компаний</p>
+                </div>
+                <div class="investors__cards_item">
+                    <h3>Владение землей</h3>
+                    <p>Большинство земель продается только во FreeHold (аренда земли на 90 лет)</p>
+                </div>
+                <div class="investors__cards_item">
+                    <h3>Низкая стоимость земли</h3>
+                    <p>Доступные цены на участки, с большим потенциалом роста</p>
+                </div>
+            </div>
+            <div class="investors__cards_item investors__cards_item-bg">
+                <h3>Открытие аэропорта Киантар в 2025 году</h3>
+                <p>Приведёт к росту туристического и корпоративного трафика, что напрямую повлияет на стоимость земли и недвижимости в регионе</p>
+            </div>
+        </div>
+
+        <div class="amman" id="advantages">
+            <img src="images/amman_bg.webp" class="amman__bg" loading="lazy" fetchpriority="high" alt="">
+            <h2 class="title__light">
+                Почему Западная Сумбава развивается последние 20 лет
+            </h2>
+            <div class="amman__top">
+                <div class="amman__top_left">
+                    <div class="orange_amman">
+                        <p><span>Amman Mineral (AMMAN)</span> — одна из крупнейших компаний в Индонезии по добыче меди и золота</p>
+                    </div>
+                    <div class="amman-advants">
+                        <div class="amman-advants-item advants-1">
+                            <h3>топ-7 стран</h3>
+                            <p>Индонезия входит в топ‑7 стран по добыче меди. Ключевой производитель-Amman Mineral на руднике Batu Hijau</p>
+                        </div>
+                        <div class="amman-advants-item advants-2">
+                            <h3>6-е место</h3>
+                            <p>среди крупнейших в мире золотых рудников по объёму добычи - около 1,009 млн унций золота</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="amman__top_right">
+                    <img src="images/amman_logo.webp" class="amman_logo" alt="" loading="lazy">
+                    <div class="amman-factories">
+                        <div class="amman-factories-item">
+                            <p>Компания активно развивает региональную инфраструктуру: дороги, административные объекты, аэропорт</p>
+                            <img src="images/check.png" alt="" loading="lazy">
+                        </div>
+                        <div class="amman-factories-item">
+                            <p>Более 300 подрядных компаний работают с Amman Mineral</p>
+                            <img src="images/check.png" alt="" loading="lazy">
+                        </div>
+                        <div class="amman-factories-item">
+                            <p>В регионе функционирует 1 крупная шахта, оценочная стоимость добычи которой составляет триллионы долларов на ближайшие 40 лет</p>
+                            <img src="images/check.png" alt="" loading="lazy">
+                        </div>
+                        <div class="amman-factories-item">
+                            <p>На стадии разработки находится еще 6 шахт</p>
+                            <img src="images/check.png" alt="" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slides">
+              <div class="swiper swiper-1">
+                <div class="swiper-wrapper swiper-wrapper-1">
+                <div class="swiper-slide swiper-slide-1">
+                    <img src="images/s1.webp" alt="Картинка 1" />
+                </div>
+                <div class="swiper-slide swiper-slide-1">
+                    <img src="images/s2.webp" alt="Картинка 2" />
+                </div>
+                <div class="swiper-slide swiper-slide-1">
+                    <img src="images/s3.webp" alt="Картинка 1" />
+                </div>
+                <div class="swiper-slide swiper-slide-1">
+                    <img src="images/s4.webp" alt="Картинка 2" />
+                </div>
+                <div class="swiper-slide swiper-slide-1">
+                    <img src="images/s5.webp" alt="Картинка 2" />
+                </div>
+                </div>
+            </div>
+            <div class="swiper-nav-1">
+
+                <div class="swiper-button-prev-1"></div>
+                <div class="swiper-button-next-1"></div>
+            </div>
+
+
+            </div>
+            <h2 class="amman__text">
+                Аман Минерал — это <span>устойчивый фактор развития региона</span>, даже в периоды войны и пандемии COVID
+            </h2>
+        </div>
+
+        <div class="anotherAdvants">
+            <div class="anotherAdvants__left">
+                <h3>Почему <span>Banana Bay</span>?</h3>
+                <p>Banana Bay — идеальное место для создания личного оазиса вдали от шума и городской суеты</p>
+            </div>
+            <div class="anotherAdvants__right">
+                <div class="anotherAdvants__right_item">
+                    <img src="images/adv1.webp" alt="" loading="lazy">
+                    <p>Все участки расположены на Hills <span>с потрясающим видом на вулкан Rinjani</span></p>
+                </div>
+                <div class="anotherAdvants__right_item">
+                    <img src="images/adv2.webp" alt="" loading="lazy">
+                    <p>В бухте расположено <span>4 приватных пляжа</span></p>
+                </div>
+                <div class="anotherAdvants__right_item">
+                    <img src="images/adv3.webp" alt="" loading="lazy">
+                    <p>Прямой доступ к приватному серф-споту и акватории для дайвинга</p>
+                </div>
+                <div class="anotherAdvants__right_item">
+                    <img src="images/adv4.webp" alt="" loading="lazy">
+                    <p>Отсутствие жилых деревень, религиозных объектов и ферм - только тишина, природа и ощущение уединения</p>
+                </div>
+            </div>
+        </div>
+
+    <div class="wrapper">
+        <div class="interest">
+            <div class="interest__title">
+                <h2 class="title__dark">Почему Сумбава интереснее чем Бали</h2>
+                <p class="interest__title_end">
+                    Развивающийся рынок Сумбавы <br> против насыщенного рынка на Бали
+                </p>
+            </div>
+            <div class="interest__hero">
+                <div class="box">
+                    <img src="images/interest_pic.png" alt="" loading="lazy">
+                </div>
+                
+                <div class="cta">
+                    <h3>Сумбава</h3>
+                    <p>Нет пробок, загруженности пляжей и серф-спотов.</p>
+                </div>
+            </div>
+            <div class="interest__cards">
+                <div class="interest__cards_item interest__cards-1">
+                    <h3>Сумбава</h3>
+                    <p>Нет пробок, загруженности пляжей и серф-спотов.</p>
+                </div>
+                <div class="interest__cards_item">
+                    <div class="interest__cards_item-left">
+                        <img src="images/cash.webp" alt="" loading="lazy">
+                        <h3>Стоимость</h3>
+                    </div>
+                    <p>Земля у воды на Бали стоит в среднем $50-70 тыс. за сотку, тогда как на Сумбаве — всего $3-6 тыс.</p>
+                </div>
+                <div class="interest__cards_item">
+                    <div class="interest__cards_item-left">
+                        <img src="images/opponent.webp" alt="" loading="lazy">
+                        <h3>Низкая конкуренция</h3>
+                    </div>
+                    <p>Рынок Бали перегрет, и держать стабильный доход на объектах недвижимости становится всё труднее.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="strategy">
+            <h2 class="title__dark">Стратегия для инвестирования</h2>
+            <div class="strategy__cards">
+                <div class="strategy__cards_item">
+                    <div class="box">
+                        <h3 class="strategy__content_ttl">Покупка, <br> разделение <br> и перепродажа</h3>
+                        <p class="strategy__content_txt">
+                            Инвестируйте в участок, разделите его на лоты и зарабатывайте на поэтапной перепродаже
+                        </p>
+                    </div>
+                    
+                    <div class="cta">
+                        <img src="images/cash_dark.webp" alt="" loading="lazy">
+                    </div>
+                </div>
+                <div class="strategy__cards_item">
+                    <div class="box">
+                        <h3 class="strategy__content_ttl">Разработка <br> девелоперских <br> проектов</h3>
+                        <p class="strategy__content_txt">
+                            Оказываем поддержу на всех этапах - от концепции и проектирования до ввода объекта в эксплуатацию и управления
+                        </p>
+                    </div>
+                    
+                    <div class="cta">
+                        <img src="images/hands.webp" alt="" loading="lazy">
+                    </div>
+                </div>
+                <div class="strategy__cards_item">
+                    <div class="box">
+                        <h3 class="strategy__content_ttl">Строительство <br> коммерческой <br> недвижимости</h3>
+                        <p class="strategy__content_txt">
+                            Отели, рестораны, клубы, коворкинги - любая форма бизнеса под развитие в уникальной локации
+                        </p>
+                    </div>
+                    
+                    <div class="cta">
+                        <img src="images/luggage.webp" alt="" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="structure">
+            <h2 class="title__dark">Инфраструктура региона</h2>
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide custom-slide">
+                        <img src="images/s21.webp" alt="" loading="lazy">
+                        <div class="slider__desc">
+                            <h3>Kini Resort</h3>
+                            <p>Бамбуковые эко-домики на берегу океана</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide custom-slide">
+                        <img src="images/s22.webp" alt="" loading="lazy">
+                        <div class="slider__desc">
+                            <h3>Whales & Waves</h3>
+                            <p>Пляжный курорт</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide custom-slide">
+                        <img src="images/mocean.webp" alt="" loading="lazy">
+                        <div class="slider__desc">
+                            <h3>Mocean dive resort</h3>
+                            <p>Пляжный дайв и серф курорт</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide custom-slide">
+                        <img src="images/kertasari.webp" alt="" loading="lazy">
+                        <div class="slider__desc">
+                            <h3>Kertasari Lodge</h3>
+                            <p>Отель с бассейном</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide custom-slide">
+                        <img src="images/baha.webp" alt="" loading="lazy">
+                        <div class="slider__desc">
+                            <h3>Baha Baha Villas</h3>
+                            <p>Комплекс вилл</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="swiper-button-next structure-next-btn"></div>
+                <div class="swiper-button-prev structure-prev-btn"></div>
+            </div>
+        </div>
+
+        <div class="steps">
+            <div class="steps__title">
+                <h2 class="title__dark">Этапы взаимодействия <br> перед покупкой</h2>
+                <p class="steps__title_end">
+                    Мы сделали процесс покупки <br> простым и удобным
+                </p>
+            </div>
+            <ul class="accordion">
+                <li class="accordion-item green">
+                    <button class="accordion-header">
+                        <div class="accordion-header-left">
+                            <div class="num">
+                                <span class="dot"></span>
+                                <span class="index">01</span>
+                            </div>
+                        </div>
+                        <div class="accordion-header-right">
+                            <p>
+                                Онлайн‑звонок или офлайн‑встреча
+                            </p>
+                            <img src="images/acc_arrow.svg" class="chevron" alt="" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="panel"><div class="panel-content">Обсуждаем цели, формат участия и подбираем наиболее подходящие направления для инвестиций</div></div>
+                </li>
+
+                <li class="accordion-item green">
+                    <button class="accordion-header">
+                        <div class="accordion-header-left">
+                            <div class="num">
+                                <span class="dot"></span>
+                                <span class="index">02</span>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-header-right">
+                            <p>Выбор участка и бронирование</p>
+                            <img src="images/acc_arrow.svg" class="chevron" alt="" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="panel"><div class="panel-content">Совместно определяем участок, после чего он фиксируется за вами</div></div>
+                </li>
+
+                <li class="accordion-item b-orange">
+                    <button class="accordion-header">
+                        <div class="accordion-header-left">
+                            <div class="num">
+                                <span class="dot"></span>
+                                <span class="index">03</span>
+                            </div>
+                        </div>
+                        <div class="accordion-header-right">
+                            <p>Внесение предоплаты и заключение сделки</p>
+                            <img src="images/acc_arrow.svg" class="chevron" alt="" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="panel"><div class="panel-content">После бронирования осуществляется предоплата, мы сопровождаем процесс оформления до завершения сделки</div></div>
+                </li>
+
+                <li class="accordion-item b-orange">
+                    <button class="accordion-header">
+                        <div class="accordion-header-left">
+                            <div class="num">
+                                <span class="dot"></span>
+                                <span class="index">04</span>
+                            </div>
+                        </div>
+                        <div class="accordion-header-right">
+                            <p>Оформление документов и выпуск сертификата</p>
+                            <img src="images/acc_arrow.svg" class="chevron" alt="">
+                        </div>
+                    </button>
+                    <div class="panel"><div class="panel-content">Готовим весь пакет документов и обеспечиваем выпуск официального сертификата</div></div>
+                </li>
+
+                <li class="accordion-item">
+                    <button class="accordion-header">
+                        <div class="accordion-header-left">
+                            <div class="num">
+                                <span class="dot"></span>
+                                <span class="index">05</span>
+                            </div>
+                        </div>
+                        <div class="accordion-header-right">
+                            <p>Определение концепции и выбор подрядчика</p>
+                            <img src="images/acc_arrow.svg" class="chevron" alt="" loading="lazy">
+                        </div>
+                    </button>
+                    <div class="panel"><div class="panel-content">Помогаем сформировать архитектурную идею, подбираем исполнителей и оказываем полную поддержку на этом этапе</div></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form__block" id="contacts">
+            <h2 class="title__dark">Заполните форму</h2>
+            <p class="form__text">Оставьте заявку, чтобы узнать все детали и забронировать участок своей мечты!</p>
+            <form action="send.php" method="POST" class="form-row js-contact-form" id="contactForm">
+                <input class="pill" type="text" placeholder="Ваше имя" name="name" required>
+
+                <div class="phone-wrapper pill">
+                    <input
+                    type="tel"
+                    class="js-phone"
+                    name="phone"
+                    placeholder=" "
+                    required
+                    >
+                </div>
+
+                <input class="pill" type="email" placeholder="E-mail" name="email" required>
+
+                <button class="main__btn" type="submit">Выбрать участок</button>
+            </form>
+
+            <div class="error" id="formError" style="color:red; margin-top:1em;"></div>
+            <span class="small__text">*Я даю согласие на то, чтобы Banana Bay хранила мои личные данные для предоставления мне соответствующей информации. Banana Bay не будет передавать эти данные третьим лицам.</span>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__left">
+            <img src="images/logo_light.webp" class="footer__left_logo-mobile" alt="" loading="lazy">
+            <p class="footer__left_yellow">PT PMA</p>
+            <p class="footer__left_yellow">Banana Bay Sumbawa</p>
+            <p class="copyright">All Rights Reserved. 2025</p>
+            <p class="madeBy">
+                Website made by <a href="http://toster-media.online/">Toster Media</a>
+            </p>
+        </div>
+        <div class="footer__mid">
+            <img src="images/logo_light.webp" alt="" loading="lazy">
+        </div>
+        <div class="footer__right">
+            <div class="footer__right_contacts">
+                <a href="mailto:mail@bananabay.com">mail@bananabay.com</a>
+                <a href="tel:+ 12 111 1111 111">+ 12 111 1111 111</a>
+            </div>
+            <div class="socials">
+                <a href=""><img src="images/facebook.webp" alt="" loading="lazy"></a>
+                <a href="https://www.instagram.com/bananabaysumbawa/"><img src="images/inst.webp" alt="" loading="lazy"></a>
+                <a href=""><img src="images/whatsapp.webp" alt="" loading="lazy"></a>
+                <a href=""><img src="images/youtube.webp" alt="" loading="lazy"></a>
+                <a href="https://t.me/sumbawaland"><img src="images/tg.webp" alt="" loading="lazy"></a>
+            </div>
+            <p class="copyright copyright-mobile">All Rights Reserved. 2025</p>
+            <p class="madeBy madeBy-mobile">
+                Website made by <a href="http://toster-media.online/">Toster Media</a>
+            </p>
+        </div>
+    </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__content_header">
+                <img src="images/icon_close.png" id="closePopup" alt="">
+            </div>
+            <h2>Заполните форму</h2>
+            <p>Оставьте заявку, чтобы узнать все детали и забронировать участок своей мечты!</p>
+            <form action="send.php" method="POST" class="popup__form js-contact-form" id="popupForm">
+                <input class="pill" type="text" placeholder="Ваше имя" name="name" required>
+
+                <div class="phone-wrapper pill">
+                    <input
+                    type="tel"
+                    class="js-phone"
+                    name="phone"
+                    placeholder=" "
+                    required
+                    >
+                </div>
+
+                <input class="pill" type="email" placeholder="E-mail" name="email" required>
+
+                <button class="main__btn" type="submit">Выбрать участок</button>
+            </form>
+
+            <span>*Я даю согласие на то, чтобы Banana Bay хранила мои личные данные для предоставления мне соответствующей информации. Banana Bay не будет передавать эти данные третьим лицам.</span>
+        </div>
+    </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- <script src="js/intlTelInput.js"></script> --> <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <!-- Скрипт утилит для форматирования/валидации (необходим для isValidNumber) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

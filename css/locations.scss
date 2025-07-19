@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Geologica:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.iti {
+  --iti-path-flags-1x: url('../images/form/flags.webp');
+  --iti-path-flags-2x: url('../images/form/flags@2x.webp');
+  --iti-path-globe-1x: url('../images/form/globe.webp');
+  --iti-path-globe-2x: url('../images/form/globe@2x.webp');
+}
+
+.title__dark {
+    color: #3D3D55;
+    font-family: Arsenal;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 40px;
+    text-align: center;
+
+    span {
+        color: #ECB920;
+    }
+}
+
+.places {
+    border-radius: 60px;
+    background: #E6F8FF;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-bottom: 60px;
+
+    &__item {
+        color: rgba(66, 66, 66, 0.80);
+        text-align: center;
+        font-family: Geologica;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+}
+
+.active {
+    font-weight: 600;
+    border-bottom: 3px solid #ECB920;
+}
+
+.main__btn {
+    text-decoration: none;
+}
+
+.map {
+    position: relative;
+    scroll-margin-top: 60px; 
+
+    .main__btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        max-width: 316px;
+    }
+
+    .map-card {
+            min-width: 300px;
+            background: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .map-card::after {
+            content: "";
+            position: absolute;
+            width: 330px;
+            height: 50px;
+            background: #fff;
+            bottom: 0;
+            left: 0;
+            border-radius: 0 30px 0 0;
+        }
+
+        .map-card .box {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .map-card  .box::after{
+            content: "";
+            position: absolute;
+            width: 45px;
+            height: 35px;
+            background: transparent;
+            bottom: 0;
+            left: 329px;
+            border-radius: 0 0 0 30px;
+            z-index: 1;
+            box-shadow: -10px 10px #fff;
+        }
+
+
+        .map-card .box::before{
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: transparent;
+            bottom: 50px;
+            left: 0;
+            border-radius: 0 0 0 30px;
+            z-index: 1;
+            box-shadow: -10px 10px #fff;
+        }
+
+        .map-card .box img {
+            width: 100%;
+            height: 100%;
+            border-radius: 30px 30px 0 30px;
+            display: block;
+        }
+
+        .map-card .cta {
+            width: 320px;
+            height: 40px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            position: absolute;
+            bottom: 1px;
+            left: 0;
+            z-index: 2;
+        }
+
+        .map-card .cta img {
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+        }
+
+
+        .cta-btn {
+            padding: 10px 16px;
+            border-radius: 30px;
+            border: 1px solid #3D3D55;
+            background: #FFF;
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.02);
+            color: #424242;
+            font-family: Geologica;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%;
+            z-index: 1;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            width: 100%;
+            cursor: pointer;
+        }
+}
+
+.location__card {
+    border-radius: 30px;
+    border: 1px solid #8ABCDA;
+    background: #E6F8FF;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 50px;
+    margin: 50px auto;
+
+    &_info {
+        flex: 1;
+        .card__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #ECB920;
+            margin-bottom: 30px;
+
+            h2 {
+                color: #3D3D55;
+                font-family: Arsenal;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 38px;
+            }
+
+            p {
+                color: #3D3D55;
+                font-family: Geologica;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 120%; /* 28.8px */
+            }
+        }
+
+        .card__info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &_left {
+                flex: 1;
+                color: rgba(61, 61, 85, 0.80);
+                font-family: Geologica;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+            }
+
+            &_right {
+                flex: 1;
+                text-align: end;
+                color: #3D3D55;
+                text-align: right;
+                font-family: Geologica;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 120%;
+            }
+        }
+
+        .more {
+            color: #3D3D55;
+            font-family: Geologica;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%;
+            cursor: pointer;
+            margin: 30px 0;
+        }
+
+        .description {
+            color: rgba(61, 61, 85, 0.80);
+            font-family: Geologica;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .btns {
+            display: flex;
+            justify-content: start;
+            align-items: stretch;
+            gap: 20px;
+            margin-bottom: 30px;
+
+            a {
+                background: #fff;
+                border-radius: 30px;
+                padding: 4px 16px;
+                border: 1px solid #000;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 8px;
+                color: #424242;
+                font-family: Geologica;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 120%;
+                text-decoration: none;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                    max-width: 40px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &_imgs {
+        flex: 1;
+        img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .imgs-collapsible {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            img {
+                max-width: 49%;
+                flex: 1;
+            }
+        }
+    }
+}
+
+.collapsible, .imgs-collapsible {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .35s ease;
+}
+
+.collapsible.open, .imgs-collapsible.open {
+    max-height: 1000px;
+}
+
+.card-reverse {
+    flex-direction: row-reverse;
+}
+
+/* первоначальный вид */
+.more__icon {
+  transition: transform .25s ease;
+}
+
+/* открытое состояние */
+.more.open .more__icon {
+  transform: rotate(180deg);
+  /* окрашиваем SVG <img> в синий через CSS‑filter; подберите оттенок ↓ */
+  filter: invert(26%) sepia(96%) saturate(3858%) hue-rotate(199deg) brightness(94%) contrast(101%);
+}
+
+.more.open .more__label {
+  color: royalblue;          /* текст тоже синий, по желанию */
+}
+
+.main__btn {
+    border-radius: 30px;
+    background: #ECB920;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.02);
+    padding: 10px 16px;
+    color: #3D3D55;
+    font-family: Geologica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.yt-modal[aria-hidden="true"] { display:none; }
+
+.yt-modal[aria-hidden="false"] {
+  position:fixed; inset:0; z-index:9999;
+  display:flex; align-items:center; justify-content:center;
+}
+
+.yt-modal__backdrop {
+  position:absolute; inset:0; background:rgba(0,0,0,.6);
+}
+
+.yt-modal__dialog {
+  position:relative; max-width:90%; width:800px; background:#E6F8FF; border: 1px solid #8ABCDA;
+  padding:30px; border-radius: 30px; box-shadow:0 0 20px rgba(0,0,0,.8);
+}
+
+.yt-modal__close {
+  position:absolute; top:10px; right:10px; background:none; border:none;
+  color:#000; font-size:24px; line-height:1; cursor:pointer;
+}
+
+/* 16:9 responsive wrapper */
+.yt-modal__video-wrapper {
+  position:relative; width:100%; padding-top:56.25%;
+}
+.yt-modal__video-wrapper iframe {
+  position:absolute; inset:0; width:100%; height:100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .location__card {
+        flex-direction: column-reverse;
+    }
+
+    .main__btn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .map .map-card .cta {
+        width: 185px;
+    }
+
+    .map .map-card::after {
+        width: 195px;
+    }
+
+    .map .map-card .box::after {
+        left: 194px;
+    }
+
+    .location__card_imgs img {
+        aspect-ratio: 2 / 1;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+}

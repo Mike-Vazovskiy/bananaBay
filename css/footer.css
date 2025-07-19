@@ -1,0 +1,114 @@
+.footer {
+  margin-top: 60px;
+  background-color: #424242;
+  padding: 50px 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__left {
+  flex: 1;
+}
+.footer__left_logo-mobile {
+  display: none;
+}
+.footer__left_yellow {
+  color: #ECB920;
+  font-family: Arsenal;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+.footer__mid {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.footer__mid img {
+  width: 100%;
+  max-width: 143px;
+}
+.footer__right {
+  flex: 1;
+}
+.footer__right_contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+.footer__right_contacts a {
+  color: #FFF;
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  display: block;
+  text-decoration: none;
+}
+.footer__right .socials {
+  margin-top: 14px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+.footer__right .socials a > img {
+  width: 40px;
+  height: 40px;
+}
+.footer .copyright, .footer .madeBy {
+  margin-top: 26px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 8px;
+}
+.footer .madeBy {
+  margin-top: 0;
+}
+.footer .madeBy a {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Geologica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.footer .copyright-mobile, .footer .madeBy-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: start;
+  }
+  .footer__left_logo-mobile {
+    display: inline-block;
+    width: 100%;
+    max-width: 144px;
+    margin-bottom: 20px;
+  }
+  .footer__left .copyright, .footer__left .madeBy {
+    display: none;
+  }
+  .footer__left_yellow {
+    margin-bottom: 8px;
+  }
+  .footer__mid {
+    display: none;
+  }
+  .footer__right_contacts {
+    align-items: start;
+    gap: 8px;
+  }
+  .copyright-mobile, .madeBy-mobile {
+    display: block !important;
+  }
+}/*# sourceMappingURL=footer.css.map */

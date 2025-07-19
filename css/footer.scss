@@ -1,0 +1,137 @@
+.footer {
+    margin-top: 60px;
+    background-color: #424242;
+    padding: 50px 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left {
+        flex: 1;
+
+        &_logo-mobile {
+            display: none;
+        }
+
+        &_yellow {
+            color: #ECB920;
+            font-family: Arsenal;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 16px;
+        }
+    }
+
+    &__mid {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            max-width: 143px;
+        }
+    }
+
+    &__right {
+        flex: 1;
+
+        &_contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: center;
+
+            a {
+                color: #FFF;
+                font-family: Geologica;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+                display: block;
+                text-decoration: none;
+            }
+        }
+
+        .socials {
+            margin-top: 14px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 10px;
+
+            a>img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+    .copyright, .madeBy {
+        margin-top: 26px;
+        color: rgba(255, 255, 255, 0.80);
+        font-family: Geologica;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        margin-bottom: 8px;
+    }
+
+    .madeBy {
+        margin-top: 0;
+
+        a {
+            color: rgba(255, 255, 255, 0.80);
+            font-family: Geologica;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;            
+        }
+    }   
+
+    .copyright-mobile, .madeBy-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: start;
+        &__left {
+            &_logo-mobile {
+                display: inline-block;
+                width: 100%;
+                max-width: 144px;
+                margin-bottom: 20px;
+            }
+
+            .copyright, .madeBy {
+                display: none;
+            }
+
+            &_yellow {
+                margin-bottom: 8px;
+            }
+        }
+
+        &__mid {
+            display: none;
+        }
+
+        &__right {
+
+            &_contacts {
+                align-items: start;
+                gap: 8px;
+            }
+        }
+    }
+    .copyright-mobile, .madeBy-mobile {
+        display: block !important;
+    }    
+}
