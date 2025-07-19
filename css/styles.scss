@@ -773,7 +773,7 @@ body {
     padding: 60px 83px;
     border-radius: 30px;
     border: 1px solid #8ABCDA;
-    background: url(/images/investors_bg.webp);
+    background: url(../images/investors_bg.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -867,7 +867,7 @@ body {
 
             .orange_amman {
                 padding: 39px 33px;
-                background: url(/images/amman_card_bg.webp);
+                background: url(../images/amman_card_bg.webp);
                 background-size: cover;
                 border-radius: 30px;
                 margin-bottom: 20px;
@@ -1067,10 +1067,10 @@ body {
     .swiper-button-next-1 { right: 16px; }
 
     .swiper-button-prev-1::after {
-        content: url(/images/arrow-left.svg) !important;
+        content: url(../images/arrow-left.svg) !important;
     }
     .swiper-button-next-1::after {
-        content: url(/images/arrow-right.svg) !important;
+        content: url(../images/arrow-right.svg) !important;
     }
 
 .anotherAdvants {
@@ -1084,7 +1084,7 @@ body {
 
     &__left {
         flex: 0.5;
-        background: url(/images/baybg.webp);
+        background: url(../images/baybg.webp);
         background-size: cover;
         border-radius: 30px;
         max-height: 370px;
@@ -1494,11 +1494,11 @@ body {
     }
 
     .structure-next-btn::before {
-        content: url(/images/arrow-right-dark.svg) !important;
+        content: url(../images/arrow-right-dark.svg) !important;
     }
 
     .structure-prev-btn::before {
-        content: url(/images/arrow-left-dark.svg) !important;
+        content: url(../images/arrow-left-dark.svg) !important;
     }
 
     .structure-next-btn::after {
