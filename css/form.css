@@ -222,6 +222,10 @@
   line-height: 120%;
 }
 
+.show {
+  display: flex;
+}
+
 .phone-wrapper .iti {
   width: 100%;
 }

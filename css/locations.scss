@@ -458,6 +458,7 @@ html {
 
 .collapsible.open, .imgs-collapsible.open {
     max-height: 1000px;
+    margin-top: 10px;
 }
 
 .card-reverse {
@@ -561,6 +562,9 @@ html {
         left: 194px;
     }
 
+    .location__card {
+        gap: 10px;
+    }
 
     .location__card_imgs img {
         aspect-ratio: 2 / 1;

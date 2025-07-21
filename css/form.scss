@@ -250,6 +250,10 @@ $btn-bg: #ecb920; // жёлтая кнопка
     }
 }
 
+  .show {    
+    display: flex;
+  }
+
 .phone-wrapper {
   .iti {
     width: 100%;

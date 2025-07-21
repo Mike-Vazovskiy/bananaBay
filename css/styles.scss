@@ -1685,19 +1685,6 @@ body {
 }
 
 @media screen and (max-width: 980px) {
-    .header {
-
-        &__menu,
-        &__end .subscribe,
-        &__end .lang {
-            display: none;
-        }
-
-        &__burger {
-            display: block;
-        }
-    }
-
     .hero__top {
         flex-direction: column;
         h1, p {
