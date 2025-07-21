@@ -392,6 +392,26 @@ html {
         }
     }
 
+    .location-thumbs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* две колонки */
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.location-thumbs img {
+  width: 100%;
+  cursor: pointer;
+  opacity: 0.7;
+  border-radius: 4px;
+  transition: opacity 0.2s;
+}
+
+.location-thumbs img.active,
+.location-thumbs img:hover {
+  opacity: 1;
+}
+
     
         .btns {
             display: flex;
@@ -453,11 +473,11 @@ html {
 .more.open .more__icon {
   transform: rotate(180deg);
   /* окрашиваем SVG <img> в синий через CSS‑filter; подберите оттенок ↓ */
-  filter: invert(26%) sepia(96%) saturate(3858%) hue-rotate(199deg) brightness(94%) contrast(101%);
+  filter: invert(271%) sepia(0%) hue-rotate(241deg) brightness(131%) contrast(101%)
 }
 
 .more.open .more__label {
-  color: royalblue;          /* текст тоже синий, по желанию */
+  color: #fff;          /* текст тоже синий, по желанию */
 }
 
 .main__btn {
