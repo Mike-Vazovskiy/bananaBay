@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .form__block {
   margin-top: 60px;
   border-radius: 30px;
@@ -19,11 +20,23 @@
   /* 19.2px */
   margin: 16px 0;
 }
+.form__block .form__container {
+  display: flex;
+  gap: 20px;
+}
+.form__block .form__container .form__img {
+  border-radius: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+}
 .form__block .form-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  display: flex;
   font-family: Geologica;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  flex: 1;
 }
 .form__block .form-row > * {
   width: 100%;
@@ -218,8 +231,64 @@
   font-family: Geologica;
 }
 
+.iti {
+  width: 100%;
+}
+
+.tg-pill {
+  margin-top: 15px;
+}
+
+.contact-method__item {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  /* заполнение кружка, если выбрано */
+  /* небольшой отступ от кружка до подписи */
+}
+.contact-method__item input {
+  display: none;
+}
+.contact-method__item .fake-radio {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #42465f;
+  border-radius: 50%;
+}
+.contact-method__item .fake-radio:after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 2px;
+  border-radius: 50%;
+  background: #42465f;
+  opacity: 0;
+}
+.contact-method__item input:checked + .fake-radio:after {
+  opacity: 1;
+}
+.contact-method__item {
+  padding-left: 28px;
+  margin-right: 24px;
+}
+
+.method[data-disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
 @media screen and (max-width: 768px) {
-  .form-row {
-    grid-template-columns: 1fr !important;
+  .form__container form {
+    gap: 15px;
+  }
+  .form__container img {
+    display: none;
   }
 }/*# sourceMappingURL=form.css.map */

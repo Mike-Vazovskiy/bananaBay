@@ -1,7 +1,7 @@
 .footer {
   margin-top: 60px;
   background-color: #424242;
-  padding: 50px 27px;
+  padding: 30px 27px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,8 +56,8 @@
   gap: 10px;
 }
 .footer__right .socials a > img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 }
 .footer .copyright, .footer .madeBy {
   margin-top: 26px;

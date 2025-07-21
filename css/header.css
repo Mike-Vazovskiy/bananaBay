@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Geologica:wght@100..900&display=swap");
 .header {
   display: flex;
@@ -189,10 +190,23 @@
 }
 
 @media screen and (max-width: 980px) {
-  .header__menu, .header__end .subscribe, .header__end .lang {
+  .header {
+    /* прячем только меню и (если нужно) языковую метку */
+    /* кнопка остаётся видимой */
+  }
+  .header__menu, .header__end .lang {
     display: none;
+  }
+  .header__end .subscribe {
+    display: inline-flex; /* чтобы сохранить flex‑поведение */
+    align-items: center;
   }
   .header__burger {
     display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 20px 0 !important;
   }
 }/*# sourceMappingURL=header.css.map */

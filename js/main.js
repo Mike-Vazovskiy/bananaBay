@@ -4,23 +4,23 @@
     );
 
     new Swiper('.swiper-1', {
-      slidesPerView: 'auto',     // Автоматическая ширина слайдов (определяется CSS)
-      slidesPerGroup: 1,         // Прокручивать по одному слайду
+      slidesPerView: 'auto',
+      slidesPerGroup: 1,
       autoHeight: true,
-      spaceBetween: gap,         // Отступ между слайдами
-      centeredSlides: false,     // Отключаем центрирование
+      spaceBetween: gap,
+      centeredSlides: false,
       breakpoints: {
-        // Для экранов <= 768px
         768: {
-          slidesPerView: 1,      // Один слайд на мобильных
-          slidesPerGroup: 1,     // Прокручивать по одному слайду
-          spaceBetween: 0        // Без отступа на мобильных
+          autoHeight: true,
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+          spaceBetween: 0
         },
-        // Для экранов > 768px
         769: {
-          slidesPerView: 'auto', // Автоматическая ширина слайдов
-          slidesPerGroup: 1,     // Прокручивать по одному слайду
-          spaceBetween: gap      // Отступ между слайдами
+          autoHeight: true,
+          slidesPerView: 'auto',
+          slidesPerGroup: 1,
+          spaceBetween: gap
         }
       },
       navigation: {

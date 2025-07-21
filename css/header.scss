@@ -221,16 +221,27 @@
 }
 
 @media screen and (max-width: 980px) {
-    .header {
+ .header {
+    /* прячем только меню и (если нужно) языковую метку */
+    &__menu,
+    &__end .lang {
+      display: none;
+    }
 
-        &__menu,
-        &__end .subscribe,
-        &__end .lang {
-            display: none;
-        }
+    /* кнопка остаётся видимой */
+    &__end .subscribe {
+      display: inline-flex;      /* чтобы сохранить flex‑поведение */
+      align-items: center;
+    }
 
         &__burger {
             display: block;
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 20px 0 !important;
     }
 }
