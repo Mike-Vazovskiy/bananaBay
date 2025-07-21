@@ -153,6 +153,16 @@
   justify-content: center;
   gap: 16px;
 }
+.popup__content .popup__form .fake-radio {
+  top: 0;
+}
+.popup__content .popup__form .contact-method__item {
+  font-family: Geologica;
+}
+.popup__content .popup__form .iti--separate-dial-code .iti__selected-flag {
+  background: transparent;
+  font-family: Geologica;
+}
 .popup__content .pill, .popup__content .phone-wrapper, .popup__content .form__block .form-row .phone-wrapper, .form__block .form-row .popup__content .phone-wrapper {
   background-color: transparent;
   padding: 12px 28px;

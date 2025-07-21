@@ -172,6 +172,20 @@ $btn-bg: #ecb920; // жёлтая кнопка
             align-items: stretch;
             justify-content: center;
             gap: 16px;
+
+            .fake-radio {
+                top: 0;
+            }
+
+            .contact-method__item {
+                font-family: Geologica;
+            }
+
+            .iti--separate-dial-code .iti__selected-flag {
+                background: transparent;
+                font-family: Geologica;
+            }
+ 
         }
 
         .pill {
