@@ -545,15 +545,6 @@ html {
   }
 }
 @media screen and (max-width: 640px) {
-  .map .map-card .cta {
-    width: 185px;
-  }
-  .map .map-card::after {
-    width: 195px;
-  }
-  .map .map-card .box::after {
-    left: 194px;
-  }
   .location__card {
     gap: 10px;
   }
@@ -570,5 +561,16 @@ html {
   }
   .places__item {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .map .map-card .cta {
+    width: 230px;
+  }
+  .map .map-card::after {
+    width: 240px;
+  }
+  .map .map-card .box::after {
+    right: 239px;
   }
 }/*# sourceMappingURL=locations.css.map */
