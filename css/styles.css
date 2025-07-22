@@ -1646,7 +1646,7 @@ body {
     margin-top: 20px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
   .hero__top_title {
     font-size: 45px;
   }

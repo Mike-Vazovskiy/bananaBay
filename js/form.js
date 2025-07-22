@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       initialCountry  : 'id',
       geoIpLookup,
       separateDialCode: true,
-      autoPlaceholder : 'aggressive',
+      // autoPlaceholder : 'aggressive',
       formatOnDisplay : false,                // не добавляем лидирующие нули
     });
     itiInstances.set(input, iti);
@@ -163,7 +163,16 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ------------------------------------------------------------------
      2. поп‑ап (если нужен)
   ------------------------------------------------------------------ */
-  const popup = document.getElementById('popup');
-  document.getElementById('openPopup') ?.addEventListener('click', () => popup && (popup.style.display = 'flex'));
-  document.getElementById('closePopup')?.addEventListener('click', () => popup && (popup.style.display = 'none'));
+  const popup  = document.getElementById('popup');
+  const open   = document.querySelectorAll('.openPopup');
+  const close  = document.getElementById('closePopup');
+
+  open.forEach(element => {
+    element.addEventListener('click', () => popup.classList.add('show'));
+    console.log(open)
+  });
+
+  close.addEventListener('click', () => popup.classList.remove('show'));
+
+
 });
