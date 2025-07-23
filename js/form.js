@@ -141,7 +141,8 @@ document.addEventListener('DOMContentLoaded', () => {
           body  : fd,
         });
         if (resp.ok) {
-          alert('Спасибо! Заявка отправлена.');
+          // alert('Спасибо! Заявка отправлена.');
+          document.getElementById('popupSuccess').style.display = 'flex'
           form.reset();           // очищаем поля
           toggle();               // возвращаем WhatsApp по умолчанию
           /* сбрасываем intl-tel-input */
@@ -169,10 +170,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   open.forEach(element => {
     element.addEventListener('click', () => popup.classList.add('show'));
-    console.log(open)
+    // console.log(open)
   });
 
   close.addEventListener('click', () => popup.classList.remove('show'));
-
+  document.getElementById("closeSuccess").addEventListener('click', () => {
+    document.getElementById('popupSuccess').style.display = 'none'
+  })
 
 });
