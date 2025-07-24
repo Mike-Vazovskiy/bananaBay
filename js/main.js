@@ -61,4 +61,46 @@
     });
   });
 
+   const whatsappButton = document.querySelector('.whatsapp');
+    const locations = document.querySelector('#locations');
+    const footer = document.querySelector('.footer');
 
+    const defaultBottom = 50; // px
+
+    const updateButtonState = () => {
+        const scrollY = window.scrollY;
+        const windowHeight = window.innerHeight;
+
+        const locationsRect = locations.getBoundingClientRect();
+        const locationsTop = scrollY + locationsRect.top;
+        const locationsHeight = locations.offsetHeight;
+        const locationsMid = locationsTop + (locationsHeight / 2);
+
+        const footerRect = footer.getBoundingClientRect();
+        const footerTop = scrollY + footerRect.top;
+
+        const buttonHeight = whatsappButton.offsetHeight;
+
+        // Появление кнопки
+        if (scrollY + windowHeight >= locationsMid) {
+            whatsappButton.classList.add('visible');
+        } else {
+            whatsappButton.classList.remove('visible');
+        }
+
+        // Проверка: близко ли кнопка к футеру
+        const distanceFromBottom = document.documentElement.scrollHeight - (scrollY + windowHeight);
+
+        const footerHeight = footer.offsetHeight;
+        const stopPoint = footerTop - buttonHeight + 60; // 20px буфер
+
+        if ((scrollY + windowHeight) > stopPoint) {
+            const overlap = (scrollY + windowHeight) - stopPoint;
+            whatsappButton.style.transform = `translateY(-${overlap}px)`;
+        } else {
+            whatsappButton.style.transform = `translateY(0)`;
+        }
+    };
+
+    window.addEventListener('scroll', updateButtonState);
+    window.addEventListener('resize', updateButtonState);

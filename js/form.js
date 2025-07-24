@@ -1,10 +1,3 @@
-/**
- * form.js — финальная версия
- * • intl‑tel‑input (авто‑определение страны, без автоформата)
- * • Telegram: достаточно телефона ИЛИ ника (или обоих)
- * • БЕЗ редиректа на thank‑you.html — остаёмся на странице и показываем alert
- */
-
 document.addEventListener('DOMContentLoaded', () => {
   /* ------------------------------------------------------------------
      0. intl‑tel‑input
@@ -31,12 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
       initialCountry  : 'id',
       geoIpLookup,
       separateDialCode: true,
-      // autoPlaceholder : 'aggressive',
-      formatOnDisplay : false,                // не добавляем лидирующие нули
+      formatOnDisplay : false,
     });
     itiInstances.set(input, iti);
 
-    /* фильтр клавиатуры */
     const allowed = /^[0-9()+\-\s]$/;
     input.addEventListener('beforeinput', e => {
       const removable = e.inputType?.startsWith('delete') ||
@@ -47,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.data && !allowed.test(e.data)) e.preventDefault();
     });
 
-    /* санитизация вставки */
     const sanitize = raw => {
       let t = raw.replace(/[^\d+]/g, '');
       const plus = (t.match(/\+/g) || []).length;
@@ -67,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
   ------------------------------------------------------------------ */
   const forms = document.querySelectorAll('form.js-contact-form');
   forms.forEach(form => {
-    /* переключатель WhatsApp / Telegram */
     const waRadio = form.querySelector('input[name="method"][value="whatsapp"]');
     const tgRadio = form.querySelector('input[name="method"][value="telegram"]');
     const waBlock = form.querySelector('.method--whatsapp');
@@ -89,7 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
       tgBlock.addEventListener('focusin', () => { tgRadio.checked = true; toggle(); });
     }
 
-    /* submit */
     form.addEventListener('submit', async e => {
       e.preventDefault();
       const btn = form.querySelector('button[type="submit"]');
@@ -97,7 +85,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const fd   = new FormData(form);
       const name = fd.get('name')?.trim();
-      if (!name) { alert('Введите имя'); btn && (btn.disabled = false); return; }
+      if (!name) {
+        showPopupMessage('Ошибка', 'Введите имя');
+        btn && (btn.disabled = false);
+        return;
+      }
 
       /* === WhatsApp ================================================= */
       if (!hasSwitcher || waRadio.checked) {
@@ -105,9 +97,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const itiWa    = itiInstances.get(waInput);
         const waNumber = itiWa ? itiWa.getNumber() : waInput.value.trim();
 
-        if (!waNumber) { alert('Введите номер WhatsApp'); btn.disabled = false; return; }
+        if (!waNumber) {
+          showPopupMessage('Ошибка', 'Введите номер WhatsApp');
+          btn && (btn.disabled = false);
+          return;
+        }
         if (itiWa && !itiWa.isValidNumber()) {
-          alert('Неверный номер WhatsApp'); btn.disabled = false; return;
+          showPopupMessage('Ошибка', 'Неверный номер WhatsApp');
+          btn && (btn.disabled = false);
+          return;
         }
         fd.set('whatsapp', waNumber);
         fd.delete('telegram');
@@ -120,10 +118,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const tgUser    = fd.get('tg_username')?.trim();
 
         if (!tgPhone && !tgUser) {
-          alert('Укажите номер ИЛИ ник Telegram'); btn.disabled = false; return;
+          showPopupMessage('Ошибка', 'Укажите номер ИЛИ ник Telegram');
+          btn && (btn.disabled = false);
+          return;
         }
         if (tgPhone && itiTg && !itiTg.isValidNumber()) {
-          alert('Неверный номер телефона Telegram'); btn.disabled = false; return;
+          showPopupMessage('Ошибка', 'Неверный номер телефона Telegram');
+          btn && (btn.disabled = false);
+          return;
         }
 
         let tgField = '';
@@ -134,48 +136,60 @@ document.addEventListener('DOMContentLoaded', () => {
         fd.delete('whatsapp');
       }
 
-      /* отправка */
       try {
         const resp = await fetch(form.getAttribute('action') || 'send.php', {
           method: form.getAttribute('method') || 'POST',
           body  : fd,
         });
         if (resp.ok) {
-          // alert('Спасибо! Заявка отправлена.');
-          document.getElementById('popupSuccess').style.display = 'flex'
-          form.reset();           // очищаем поля
-          toggle();               // возвращаем WhatsApp по умолчанию
-          /* сбрасываем intl-tel-input */
+          showPopupMessage('Спасибо!', 'Ваша заявка успешно отправлена. Наш менеджер свяжется с вами в ближайшее время.');
+          form.reset();
+          toggle();
           form.querySelectorAll('input.js-phone').forEach(inp => {
             const iti = itiInstances.get(inp);
             iti && iti.setNumber('');
           });
         } else {
-          alert('Ошибка: ' + (await resp.text()));
+          showPopupMessage('Ошибка', await resp.text());
         }
       } catch (err) {
         console.error('Network error:', err);
-        alert('Ошибка сети. Попробуйте позже.');
+        showPopupMessage('Ошибка сети', 'Пожалуйста, попробуйте позже.');
       }
+
       btn && (btn.disabled = false);
     });
   });
 
   /* ------------------------------------------------------------------
-     2. поп‑ап (если нужен)
+     2. Попап
   ------------------------------------------------------------------ */
-  const popup  = document.getElementById('popup');
-  const open   = document.querySelectorAll('.openPopup');
-  const close  = document.getElementById('closePopup');
+  const popup = document.getElementById('popup');
+  const open  = document.querySelectorAll('.openPopup');
+  const close = document.getElementById('closePopup');
 
   open.forEach(element => {
     element.addEventListener('click', () => popup.classList.add('show'));
-    // console.log(open)
   });
 
-  close.addEventListener('click', () => popup.classList.remove('show'));
-  document.getElementById("closeSuccess").addEventListener('click', () => {
-    document.getElementById('popupSuccess').style.display = 'none'
-  })
+  close?.addEventListener('click', () => popup.classList.remove('show'));
+  document.getElementById("closeSuccess")?.addEventListener('click', () => {
+    document.getElementById('popupSuccess').style.display = 'none';
+  });
 
+  /* ------------------------------------------------------------------
+     3. Функция отображения popup-сообщений
+  ------------------------------------------------------------------ */
+  const showPopupMessage = (title, message) => {
+    const popup    = document.getElementById('popupSuccess');
+    const titleEl  = document.getElementById('popupSuccessTitle');
+    const textEl   = document.getElementById('popupSuccessText');
+    if (titleEl && textEl && popup) {
+      titleEl.textContent = title;
+      textEl.textContent  = message;
+      popup.style.display = 'flex';
+    } else {
+      console.warn('popupSuccess элементы не найдены');
+    }
+  };
 });
