@@ -1638,7 +1638,6 @@ body {
   }
   .map .map-card .box img {
     border-radius: 30px;
-    aspect-ratio: 2/1.5;
     -o-object-fit: cover;
        object-fit: cover;
   }
