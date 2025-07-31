@@ -61,46 +61,83 @@
     });
   });
 
-   const whatsappButton = document.querySelector('.whatsapp');
-    const locations = document.querySelector('#locations');
-    const footer = document.querySelector('.footer');
+  //  const whatsappButton = document.querySelector('.whatsapp');
+  //   const locations = document.querySelector('#locations');
+  //   const footer = document.querySelector('.footer');
 
-    const defaultBottom = 50; // px
+  //   const defaultBottom = 50; // px
 
-    const updateButtonState = () => {
-        const scrollY = window.scrollY;
-        const windowHeight = window.innerHeight;
+  //   const updateButtonState = () => {
+  //       const scrollY = window.scrollY;
+  //       const windowHeight = window.innerHeight;
 
-        const locationsRect = locations.getBoundingClientRect();
-        const locationsTop = scrollY + locationsRect.top;
-        const locationsHeight = locations.offsetHeight;
-        const locationsMid = locationsTop + (locationsHeight / 2);
+  //       const locationsRect = locations.getBoundingClientRect();
+  //       const locationsTop = scrollY + locationsRect.top;
+  //       const locationsHeight = locations.offsetHeight;
+  //       const locationsMid = locationsTop + (locationsHeight / 2);
 
-        const footerRect = footer.getBoundingClientRect();
-        const footerTop = scrollY + footerRect.top;
+  //       const footerRect = footer.getBoundingClientRect();
+  //       const footerTop = scrollY + footerRect.top;
 
-        const buttonHeight = whatsappButton.offsetHeight;
+  //       const buttonHeight = whatsappButton.offsetHeight;
 
-        // Появление кнопки
-        if (scrollY + windowHeight >= locationsMid) {
-            whatsappButton.classList.add('visible');
-        } else {
-            whatsappButton.classList.remove('visible');
-        }
+  //       // Появление кнопки
+  //       if (scrollY + windowHeight >= locationsMid) {
+  //           whatsappButton.classList.add('visible');
+  //       } else {
+  //           whatsappButton.classList.remove('visible');
+  //       }
 
-        // Проверка: близко ли кнопка к футеру
-        const distanceFromBottom = document.documentElement.scrollHeight - (scrollY + windowHeight);
+  //       // Проверка: близко ли кнопка к футеру
+  //       const distanceFromBottom = document.documentElement.scrollHeight - (scrollY + windowHeight);
 
-        const footerHeight = footer.offsetHeight;
-        const stopPoint = footerTop - buttonHeight + 60; // 20px буфер
+  //       const footerHeight = footer.offsetHeight;
+  //       const stopPoint = footerTop - buttonHeight + 60; // 20px буфер
 
-        if ((scrollY + windowHeight) > stopPoint) {
-            const overlap = (scrollY + windowHeight) - stopPoint;
-            whatsappButton.style.transform = `translateY(-${overlap}px)`;
-        } else {
-            whatsappButton.style.transform = `translateY(0)`;
-        }
-    };
+  //       if ((scrollY + windowHeight) > stopPoint) {
+  //           const overlap = (scrollY + windowHeight) - stopPoint;
+  //           whatsappButton.style.transform = `translateY(-${overlap}px)`;
+  //       } else {
+  //           whatsappButton.style.transform = `translateY(0)`;
+  //       }
+  //   };
 
-    window.addEventListener('scroll', updateButtonState);
-    window.addEventListener('resize', updateButtonState);
+  //   window.addEventListener('scroll', updateButtonState);
+  //   window.addEventListener('resize', updateButtonState);
+
+  const whatsappButton   = document.querySelector('.whatsapp');
+const locations        = document.querySelector('#locations');
+const footer           = document.querySelector('.footer');
+
+let   locMid, stopPoint, btnH;
+const recalcMetrics = () => {
+  const scrollY      = window.scrollY;
+  const locRect      = locations.getBoundingClientRect();
+  const footerRect   = footer.getBoundingClientRect();
+
+  locMid    = scrollY + locRect.top + locRect.height / 2;
+  btnH      = whatsappButton.offsetHeight;
+  stopPoint = scrollY + footerRect.top - btnH + 60;
+};
+recalcMetrics();
+window.addEventListener('resize', recalcMetrics);
+
+// --- rAF-throttled scroll handler ---
+let ticking = false;
+const onScroll = () => {
+  if (ticking) return;
+  ticking = true;
+  requestAnimationFrame(() => {
+    const y = window.scrollY + innerHeight;
+
+    // показать / скрыть
+    whatsappButton.classList.toggle('visible', y >= locMid);
+
+    // подвинуть, если перекрываем футер
+    const overlap = Math.max(0, y - stopPoint);
+    whatsappButton.style.transform = `translate3d(0, -${overlap}px, 0)`;
+
+    ticking = false;
+  });
+};
+window.addEventListener('scroll', onScroll, { passive: true }); /* пассивный слушатель! */
