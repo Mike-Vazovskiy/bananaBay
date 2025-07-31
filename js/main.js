@@ -105,39 +105,72 @@
   //   window.addEventListener('scroll', updateButtonState);
   //   window.addEventListener('resize', updateButtonState);
 
-  const whatsappButton   = document.querySelector('.whatsapp');
-const locations        = document.querySelector('#locations');
-const footer           = document.querySelector('.footer');
+const whatsappButton = document.querySelector('.whatsapp');
+const locations = document.querySelector('#locations');
+const footer = document.querySelector('.footer');
 
-let   locMid, stopPoint, btnH;
-const recalcMetrics = () => {
-  const scrollY      = window.scrollY;
-  const locRect      = locations.getBoundingClientRect();
-  const footerRect   = footer.getBoundingClientRect();
+const defaultBottom = 30; // px (уменьшено для более компактного расположения)
+let lastTranslateY = 0; // Для сглаживания изменений
 
-  locMid    = scrollY + locRect.top + locRect.height / 2;
-  btnH      = whatsappButton.offsetHeight;
-  stopPoint = scrollY + footerRect.top - btnH + 60;
+const updateButtonState = () => {
+    const scrollY = window.scrollY;
+    const windowHeight = window.innerHeight;
+
+    const locationsRect = locations.getBoundingClientRect();
+    const locationsTop = scrollY + locationsRect.top;
+    const locationsHeight = locations.offsetHeight;
+    const locationsMid = locationsTop + (locationsHeight / 2);
+
+    const footerRect = footer.getBoundingClientRect();
+    const footerTop = scrollY + footerRect.top;
+
+    const buttonHeight = whatsappButton.offsetHeight;
+
+    // Появление кнопки
+    if (scrollY + windowHeight >= locationsMid) {
+        whatsappButton.classList.add('visible');
+    } else {
+        whatsappButton.classList.remove('visible');
+    }
+
+    // Проверка: близко ли кнопка к футеру
+    const buffer = -65; // Уменьшен буфер для меньшего поднятия
+    const stopPoint = footerTop - buttonHeight - buffer;
+    const overlap = Math.max(0, scrollY + windowHeight - stopPoint);
+
+    // Сглаживание только при движении вверх, для движения вниз — мгновенно
+    const targetTranslateY = overlap > 0 ? -overlap : 0;
+    const smoothingFactor = targetTranslateY < lastTranslateY ? 0.4 : 1; // Быстрее вниз (1 = без сглаживания)
+    const smoothedTranslateY = lastTranslateY + (targetTranslateY - lastTranslateY) * smoothingFactor;
+    lastTranslateY = smoothedTranslateY;
+
+    whatsappButton.style.transform = `translateY(${smoothedTranslateY}px)`;
+
+    // Продолжаем обновление, если страница прокручивается
+    if (isScrolling) {
+        requestAnimationFrame(updateButtonState);
+    }
 };
-recalcMetrics();
-window.addEventListener('resize', recalcMetrics);
 
-// --- rAF-throttled scroll handler ---
-let ticking = false;
-const onScroll = () => {
-  if (ticking) return;
-  ticking = true;
-  requestAnimationFrame(() => {
-    const y = window.scrollY + innerHeight;
+// Запускаем обновление только при скролле или ресайзе
+let isScrolling = false;
+window.addEventListener('scroll', () => {
+    if (!isScrolling) {
+        isScrolling = true;
+        requestAnimationFrame(updateButtonState);
+    }
+});
+window.addEventListener('resize', () => {
+    if (!isScrolling) {
+        isScrolling = true;
+        requestAnimationFrame(updateButtonState);
+    }
+});
 
-    // показать / скрыть
-    whatsappButton.classList.toggle('visible', y >= locMid);
-
-    // подвинуть, если перекрываем футер
-    const overlap = Math.max(0, y - stopPoint);
-    whatsappButton.style.transform = `translate3d(0, -${overlap}px, 0)`;
-
-    ticking = false;
-  });
-};
-window.addEventListener('scroll', onScroll, { passive: true }); /* пассивный слушатель! */
+// Останавливаем requestAnimationFrame, когда скролл прекращается
+window.addEventListener('scroll', () => {
+    clearTimeout(window.scrollEndTimer);
+    window.scrollEndTimer = setTimeout(() => {
+        isScrolling = false;
+    }, 100); // Уменьшено до 100 мс для большей отзывчивости
+});
