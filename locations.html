@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BananaBay | Участки</title>
+    <title data-lang="page_title_lots">BananaBay | Участки</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/locations.css">
     <link rel="stylesheet" href="css/form.css">
@@ -24,14 +24,14 @@
         <header class="header">
             <a href="index.html"><img src="images/logo.svg" alt="" class="header__logo" loading="lazy"></a>
             <ul class="header__menu">
-                <li class="header__menu_item"><a href="">Участки</a></li>
-                <li class="header__menu_item"><a href="index.html#about">О Сумбаве</a></li>
-                <li class="header__menu_item"><a href="index.html#investment">Инвесторам</a></li>
-                <li class="header__menu_item"><a href="index.html#advantages">Преимущества</a></li>
-                <li class="header__menu_item"><a href="#contacts">Контакты</a></li>
+                <li class="header__menu_item"><a href="" data-lang="nav_lots">Участки</a></li>
+                <li class="header__menu_item"><a href="index.html#about" data-lang="nav_about">О Сумбаве</a></li>
+                <li class="header__menu_item"><a href="index.html#investment" data-lang="nav_investors">Инвесторам</a></li>
+                <li class="header__menu_item"><a href="index.html#advantages" data-lang="nav_advantages">Преимущества</a></li>
+                <li class="header__menu_item"><a href="#contacts" data-lang="nav_contacts">Контакты</a></li>
             </ul>
             <div class="header__end">
-                <button class="subscribe openPopup" id="openPopup">
+                <button class="subscribe openPopup" id="openPopup" data-lang="btn_contact">
                     Связаться с нами
                 </button>
                 <p class="lang">RU</p>
@@ -45,14 +45,14 @@
                 <img src="images/closeMenu.webp" class="sidebar__close" alt="" loading="lazy">
                 </div>
                 <ul class="sidebar__nav">
-                    <li class="sidebar__item"><a href="index.html#locations">Участки</a></li>
-                    <li class="sidebar__item"><a href="index.html#about">О Сумбаве</a></li>
-                    <li class="sidebar__item"><a href="index.html#investment">Инвесторам</a></li>
-                    <li class="sidebar__item"><a href="index.html#advantages">Преимущества</a></li>
-                    <li class="sidebar__item"><a href="#contacts">Контакты</a></li>
+                    <li class="sidebar__item"><a href="index.html#locations" data-lang="nav_lots">Участки</a></li>
+                    <li class="sidebar__item"><a href="index.html#about" data-lang="nav_about">О Сумбаве</a></li>
+                    <li class="sidebar__item"><a href="index.html#investment" data-lang="nav_investors">Инвесторам</a></li>
+                    <li class="sidebar__item"><a href="index.html#advantages" data-lang="nav_advantages">Преимущества</a></li>
+                    <li class="sidebar__item"><a href="#contacts" data-lang="nav_contacts">Контакты</a></li>
                 </ul>
 
-                <button class="sidebar__cta subscribe main__btn">Связаться с нами</button>
+                <button class="sidebar__cta subscribe main__btn" data-lang="btn_contact">Связаться с нами</button>
 
                 <address class="sidebar__contacts">
                     <p class="sidebar__contacts_yellow">PT PMA<br><br>Banana Bay Sumbawa</p><br><br>
@@ -68,15 +68,15 @@
                     <a href="https://t.me/sumbawaland"><img src="images/tgLight.webp" alt="" loading="lazy"></a>
                 </div>
 
-                <p class="sidebar__copy">All Rights Reserved. 2025</p>
+                <p class="sidebar__copy" data-lang="footer_rights">All Rights Reserved. 2025</p>
             </div>
         </aside>
 
         <div class="places">
-            <a class="places__item active">Banana Bay</a>
-            <a class="places__item">Scar Reef</a>
-            <a class="places__item">Maluk</a>
-            <a class="places__item">Yo-Yos</a>
+            <a class="places__item active" data-lang="places_banana_bay">Banana Bay</a>
+            <a class="places__item" data-lang="places_scar_reef">Scar Reef</a>
+            <a class="places__item" data-lang="places_maluk">Maluk</a>
+            <a class="places__item" data-lang="places_yo_yos">Yo-Yos</a>
         </div>
 
         <div class="map">
@@ -87,7 +87,7 @@
                 </picture>
                                 
                 <div class="cta">
-                    <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="main__btn" target="_blank">3D модель</a>
+                    <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="main__btn" target="_blank" data-lang="3d_model">3D модель</a>
                 </div>
             </div>
         </div>
@@ -98,59 +98,59 @@
                     <p>36,800$</p>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
+                    <p class="card__info_left" data-lang="lot_area">Площадь</p>
+                    <div class="card__info_right">20 <span data-lang="lot_value_hectares">соток</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
+                    <p class="card__info_left" data-lang="lot_certificate">Тип сертификата</p>
                     <div class="card__info_right">HGB</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
+                    <p class="card__info_left" data-lang="lot_road">Дорога</p>
+                    <div class="card__info_right" data-lang="lot_road_dirt">Грунтовая</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
+                    <p class="card__info_left" data-lang="lot_water">Вода</p>
+                    <div class="card__info_right">30<span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_ocean_view">Вид на океан</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_sunset_view">Вид на закат</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
+                    <p class="card__info_left" data-lang="lot_ocean_distance">Расстояние до океана</p>
+                    <div class="card__info_right">300 <span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
+                    <p class="card__info_left" data-lang="lot_price_per_are">Цена за сотку</p>
                     <div class="card__info_right">1840$</div>
                 </div>
                 <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
+                    <span class="more__label" data-lang="lot_details_more">Подробнее об участке</span>
                     <img class="more__icon" src="images/downArrow.svg" alt="">
                 </button>
                 <div class="collapsible">
                     <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
+                        <p class="card__info_left" data-lang="lot_certificate_year">Год выпуска сертификата </p>
                         <div class="card__info_right">2025</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
+                        <p class="card__info_left" data-lang="lot_certificate_status">Статус сертификата </p>
+                        <div class="card__info_right" data-lang="lot_value_non_agriculture">Non Agriculture</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
+                        <p class="card__info_left" data-lang="lot_land_purpose">Назначение земли </p>
+                        <div class="card__info_right" data-lang="lot_value_touristic">Touristic</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
+                        <p class="card__info_left" data-lang="lot_surveys">Геодезия, геология, анализ грунта: </p>
+                        <div class="card__info_right" data-lang="lot_surveys_done">проведены</div>
                     </div>
-                    <p class="description">
+                    <p class="description" data-lang="lot_description">
                         Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
 
                         Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
@@ -158,7 +158,7 @@
                         Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
                     </p>
                 </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
+                <a class="main__btn btn-green openPopup" data-lang="btn_book_lot">Забронировать участок</a>
             </div>
             <div class="location__card_imgs">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
@@ -199,8 +199,8 @@
                         <img src="images/loc2.webp" data-index="5" />
                 </div>
                     <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
+                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel" data-lang="3d_model">3D модель</a>
+                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s" data-lang="watch_video">
                             Смотреть видео
                             <img src="images/play.webp" alt="">
                         </a>
@@ -215,59 +215,59 @@
                     <p>36,800$</p>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
+                    <p class="card__info_left" data-lang="lot_area">Площадь</p>
+                    <div class="card__info_right">20 <span data-lang="lot_value_hectares">соток</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
+                    <p class="card__info_left" data-lang="lot_certificate">Тип сертификата</p>
                     <div class="card__info_right">HGB</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
+                    <p class="card__info_left" data-lang="lot_road">Дорога</p>
+                    <div class="card__info_right" data-lang="lot_road_dirt">Грунтовая</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
+                    <p class="card__info_left" data-lang="lot_water">Вода</p>
+                    <div class="card__info_right">30<span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_ocean_view">Вид на океан</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_sunset_view">Вид на закат</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
+                    <p class="card__info_left" data-lang="lot_ocean_distance">Расстояние до океана</p>
+                    <div class="card__info_right">300 <span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
+                    <p class="card__info_left" data-lang="lot_price_per_are">Цена за сотку</p>
                     <div class="card__info_right">1840$</div>
                 </div>
                 <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
+                    <span class="more__label" data-lang="lot_details_more">Подробнее об участке</span>
                     <img class="more__icon" src="images/downArrow.svg" alt="">
                 </button>
                 <div class="collapsible">
                     <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
+                        <p class="card__info_left" data-lang="lot_certificate_year">Год выпуска сертификата </p>
                         <div class="card__info_right">2025</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
+                        <p class="card__info_left" data-lang="lot_certificate_status">Статус сертификата </p>
+                        <div class="card__info_right" data-lang="lot_value_non_agriculture">Non Agriculture</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
+                        <p class="card__info_left" data-lang="lot_land_purpose">Назначение земли </p>
+                        <div class="card__info_right" data-lang="lot_value_touristic">Touristic</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
+                        <p class="card__info_left" data-lang="lot_surveys">Геодезия, геология, анализ грунта: </p>
+                        <div class="card__info_right" data-lang="lot_surveys_done">проведены</div>
                     </div>
-                    <p class="description">
+                    <p class="description" data-lang="lot_description">
                         Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
 
                         Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
@@ -275,7 +275,7 @@
                         Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
                     </p>
                 </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
+                <a class="main__btn btn-green openPopup" data-lang="btn_book_lot">Забронировать участок</a>
             </div>
             <div class="location__card_imgs">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
@@ -316,8 +316,8 @@
                         <img src="images/loc2.webp" data-index="5" />
                 </div>
                     <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
+                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel" data-lang="3d_model">3D модель</a>
+                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s" data-lang="watch_video">
                             Смотреть видео
                             <img src="images/play.webp" alt="">
                         </a>
@@ -332,59 +332,59 @@
                     <p>36,800$</p>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
+                    <p class="card__info_left" data-lang="lot_area">Площадь</p>
+                    <div class="card__info_right">20 <span data-lang="lot_value_hectares">соток</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
+                    <p class="card__info_left" data-lang="lot_certificate">Тип сертификата</p>
                     <div class="card__info_right">HGB</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
+                    <p class="card__info_left" data-lang="lot_road">Дорога</p>
+                    <div class="card__info_right" data-lang="lot_road_dirt">Грунтовая</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
+                    <p class="card__info_left" data-lang="lot_water">Вода</p>
+                    <div class="card__info_right">30<span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_ocean_view">Вид на океан</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_sunset_view">Вид на закат</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
+                    <p class="card__info_left" data-lang="lot_ocean_distance">Расстояние до океана</p>
+                    <div class="card__info_right">300 <span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
+                    <p class="card__info_left" data-lang="lot_price_per_are">Цена за сотку</p>
                     <div class="card__info_right">1840$</div>
                 </div>
                 <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
+                    <span class="more__label" data-lang="lot_details_more">Подробнее об участке</span>
                     <img class="more__icon" src="images/downArrow.svg" alt="">
                 </button>
                 <div class="collapsible">
                     <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
+                        <p class="card__info_left" data-lang="lot_certificate_year">Год выпуска сертификата </p>
                         <div class="card__info_right">2025</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
+                        <p class="card__info_left" data-lang="lot_certificate_status">Статус сертификата </p>
+                        <div class="card__info_right" data-lang="lot_value_non_agriculture">Non Agriculture</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
+                        <p class="card__info_left" data-lang="lot_land_purpose">Назначение земли </p>
+                        <div class="card__info_right" data-lang="lot_value_touristic">Touristic</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
+                        <p class="card__info_left" data-lang="lot_surveys">Геодезия, геология, анализ грунта: </p>
+                        <div class="card__info_right" data-lang="lot_surveys_done">проведены</div>
                     </div>
-                    <p class="description">
+                    <p class="description" data-lang="lot_description">
                         Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
 
                         Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
@@ -392,7 +392,7 @@
                         Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
                     </p>
                 </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
+                <a class="main__btn btn-green openPopup" data-lang="btn_book_lot">Забронировать участок</a>
             </div>
             <div class="location__card_imgs">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
@@ -433,8 +433,8 @@
                         <img src="images/loc2.webp" data-index="5" />
                 </div>
                     <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
+                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel" data-lang="3d_model">3D модель</a>
+                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s" data-lang="watch_video">
                             Смотреть видео
                             <img src="images/play.webp" alt="">
                         </a>
@@ -449,59 +449,59 @@
                     <p>36,800$</p>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
+                    <p class="card__info_left" data-lang="lot_area">Площадь</p>
+                    <div class="card__info_right">20 <span data-lang="lot_value_hectares">соток</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
+                    <p class="card__info_left" data-lang="lot_certificate">Тип сертификата</p>
                     <div class="card__info_right">HGB</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
+                    <p class="card__info_left" data-lang="lot_road">Дорога</p>
+                    <div class="card__info_right" data-lang="lot_road_dirt">Грунтовая</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
+                    <p class="card__info_left" data-lang="lot_water">Вода</p>
+                    <div class="card__info_right">30<span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_ocean_view">Вид на океан</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_sunset_view">Вид на закат</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
+                    <p class="card__info_left" data-lang="lot_ocean_distance">Расстояние до океана</p>
+                    <div class="card__info_right">300 <span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
+                    <p class="card__info_left" data-lang="lot_price_per_are">Цена за сотку</p>
                     <div class="card__info_right">1840$</div>
                 </div>
                 <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
+                    <span class="more__label" data-lang="lot_details_more">Подробнее об участке</span>
                     <img class="more__icon" src="images/downArrow.svg" alt="">
                 </button>
                 <div class="collapsible">
                     <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
+                        <p class="card__info_left" data-lang="lot_certificate_year">Год выпуска сертификата </p>
                         <div class="card__info_right">2025</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
+                        <p class="card__info_left" data-lang="lot_certificate_status">Статус сертификата </p>
+                        <div class="card__info_right" data-lang="lot_value_non_agriculture">Non Agriculture</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
+                        <p class="card__info_left" data-lang="lot_land_purpose">Назначение земли </p>
+                        <div class="card__info_right" data-lang="lot_value_touristic">Touristic</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
+                        <p class="card__info_left" data-lang="lot_surveys">Геодезия, геология, анализ грунта: </p>
+                        <div class="card__info_right" data-lang="lot_surveys_done">проведены</div>
                     </div>
-                    <p class="description">
+                    <p class="description" data-lang="lot_description">
                         Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
 
                         Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
@@ -509,7 +509,7 @@
                         Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
                     </p>
                 </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
+                <a class="main__btn btn-green openPopup" data-lang="btn_book_lot">Забронировать участок</a>
             </div>
             <div class="location__card_imgs">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
@@ -550,8 +550,8 @@
                         <img src="images/loc2.webp" data-index="5" />
                 </div>
                     <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
+                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel" data-lang="3d_model">3D модель</a>
+                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s" data-lang="watch_video">
                             Смотреть видео
                             <img src="images/play.webp" alt="">
                         </a>
@@ -566,59 +566,59 @@
                     <p>36,800$</p>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
+                    <p class="card__info_left" data-lang="lot_area">Площадь</p>
+                    <div class="card__info_right">20 <span data-lang="lot_value_hectares">соток</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
+                    <p class="card__info_left" data-lang="lot_certificate">Тип сертификата</p>
                     <div class="card__info_right">HGB</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
+                    <p class="card__info_left" data-lang="lot_road">Дорога</p>
+                    <div class="card__info_right" data-lang="lot_road_dirt">Грунтовая</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
+                    <p class="card__info_left" data-lang="lot_water">Вода</p>
+                    <div class="card__info_right">30<span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_ocean_view">Вид на океан</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_sunset_view">Вид на закат</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
+                    <p class="card__info_left" data-lang="lot_ocean_distance">Расстояние до океана</p>
+                    <div class="card__info_right">300 <span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
+                    <p class="card__info_left" data-lang="lot_price_per_are">Цена за сотку</p>
                     <div class="card__info_right">1840$</div>
                 </div>
                 <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
+                    <span class="more__label" data-lang="lot_details_more">Подробнее об участке</span>
                     <img class="more__icon" src="images/downArrow.svg" alt="">
                 </button>
                 <div class="collapsible">
                     <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
+                        <p class="card__info_left" data-lang="lot_certificate_year">Год выпуска сертификата </p>
                         <div class="card__info_right">2025</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
+                        <p class="card__info_left" data-lang="lot_certificate_status">Статус сертификата </p>
+                        <div class="card__info_right" data-lang="lot_value_non_agriculture">Non Agriculture</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
+                        <p class="card__info_left" data-lang="lot_land_purpose">Назначение земли </p>
+                        <div class="card__info_right" data-lang="lot_value_touristic">Touristic</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
+                        <p class="card__info_left" data-lang="lot_surveys">Геодезия, геология, анализ грунта: </p>
+                        <div class="card__info_right" data-lang="lot_surveys_done">проведены</div>
                     </div>
-                    <p class="description">
+                    <p class="description" data-lang="lot_description">
                         Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
 
                         Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
@@ -626,7 +626,7 @@
                         Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
                     </p>
                 </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
+                <a class="main__btn btn-green openPopup" data-lang="btn_book_lot">Забронировать участок</a>
             </div>
             <div class="location__card_imgs">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
@@ -667,8 +667,8 @@
                         <img src="images/loc2.webp" data-index="5" />
                 </div>
                     <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
+                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel" data-lang="3d_model">3D модель</a>
+                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s" data-lang="watch_video">
                             Смотреть видео
                             <img src="images/play.webp" alt="">
                         </a>
@@ -683,59 +683,59 @@
                     <p>36,800$</p>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
+                    <p class="card__info_left" data-lang="lot_area">Площадь</p>
+                    <div class="card__info_right">20 <span data-lang="lot_value_hectares">соток</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
+                    <p class="card__info_left" data-lang="lot_certificate">Тип сертификата</p>
                     <div class="card__info_right">HGB</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
+                    <p class="card__info_left" data-lang="lot_road">Дорога</p>
+                    <div class="card__info_right" data-lang="lot_road_dirt">Грунтовая</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
+                    <p class="card__info_left" data-lang="lot_water">Вода</p>
+                    <div class="card__info_right">30<span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_ocean_view">Вид на океан</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_sunset_view">Вид на закат</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
+                    <p class="card__info_left" data-lang="lot_ocean_distance">Расстояние до океана</p>
+                    <div class="card__info_right">300 <span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
+                    <p class="card__info_left" data-lang="lot_price_per_are">Цена за сотку</p>
                     <div class="card__info_right">1840$</div>
                 </div>
                 <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
+                    <span class="more__label" data-lang="lot_details_more">Подробнее об участке</span>
                     <img class="more__icon" src="images/downArrow.svg" alt="">
                 </button>
                 <div class="collapsible">
                     <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
+                        <p class="card__info_left" data-lang="lot_certificate_year">Год выпуска сертификата </p>
                         <div class="card__info_right">2025</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
+                        <p class="card__info_left" data-lang="lot_certificate_status">Статус сертификата </p>
+                        <div class="card__info_right" data-lang="lot_value_non_agriculture">Non Agriculture</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
+                        <p class="card__info_left" data-lang="lot_land_purpose">Назначение земли </p>
+                        <div class="card__info_right" data-lang="lot_value_touristic">Touristic</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
+                        <p class="card__info_left" data-lang="lot_surveys">Геодезия, геология, анализ грунта: </p>
+                        <div class="card__info_right" data-lang="lot_surveys_done">проведены</div>
                     </div>
-                    <p class="description">
+                    <p class="description" data-lang="lot_description">
                         Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
 
                         Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
@@ -743,7 +743,7 @@
                         Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
                     </p>
                 </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
+                <a class="main__btn btn-green openPopup" data-lang="btn_book_lot">Забронировать участок</a>
             </div>
             <div class="location__card_imgs">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
@@ -784,8 +784,8 @@
                         <img src="images/loc2.webp" data-index="5" />
                 </div>
                     <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
+                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel" data-lang="3d_model">3D модель</a>
+                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s" data-lang="watch_video">
                             Смотреть видео
                             <img src="images/play.webp" alt="">
                         </a>
@@ -800,59 +800,59 @@
                     <p>36,800$</p>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
+                    <p class="card__info_left" data-lang="lot_area">Площадь</p>
+                    <div class="card__info_right">20 <span data-lang="lot_value_hectares">соток</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
+                    <p class="card__info_left" data-lang="lot_certificate">Тип сертификата</p>
                     <div class="card__info_right">HGB</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
+                    <p class="card__info_left" data-lang="lot_road">Дорога</p>
+                    <div class="card__info_right" data-lang="lot_road_dirt">Грунтовая</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
+                    <p class="card__info_left" data-lang="lot_water">Вода</p>
+                    <div class="card__info_right">30<span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_ocean_view">Вид на океан</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_sunset_view">Вид на закат</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
+                    <p class="card__info_left" data-lang="lot_ocean_distance">Расстояние до океана</p>
+                    <div class="card__info_right">300 <span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
+                    <p class="card__info_left" data-lang="lot_price_per_are">Цена за сотку</p>
                     <div class="card__info_right">1840$</div>
                 </div>
                 <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
+                    <span class="more__label" data-lang="lot_details_more">Подробнее об участке</span>
                     <img class="more__icon" src="images/downArrow.svg" alt="">
                 </button>
                 <div class="collapsible">
                     <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
+                        <p class="card__info_left" data-lang="lot_certificate_year">Год выпуска сертификата </p>
                         <div class="card__info_right">2025</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
+                        <p class="card__info_left" data-lang="lot_certificate_status">Статус сертификата </p>
+                        <div class="card__info_right" data-lang="lot_value_non_agriculture">Non Agriculture</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
+                        <p class="card__info_left" data-lang="lot_land_purpose">Назначение земли </p>
+                        <div class="card__info_right" data-lang="lot_value_touristic">Touristic</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
+                        <p class="card__info_left" data-lang="lot_surveys">Геодезия, геология, анализ грунта: </p>
+                        <div class="card__info_right" data-lang="lot_surveys_done">проведены</div>
                     </div>
-                    <p class="description">
+                    <p class="description" data-lang="lot_description">
                         Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
 
                         Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
@@ -860,7 +860,7 @@
                         Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
                     </p>
                 </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
+                <a class="main__btn btn-green openPopup" data-lang="btn_book_lot">Забронировать участок</a>
             </div>
             <div class="location__card_imgs">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
@@ -901,8 +901,8 @@
                         <img src="images/loc2.webp" data-index="5" />
                 </div>
                     <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
+                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel" data-lang="3d_model">3D модель</a>
+                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s" data-lang="watch_video">
                             Смотреть видео
                             <img src="images/play.webp" alt="">
                         </a>
@@ -917,59 +917,59 @@
                     <p>36,800$</p>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
+                    <p class="card__info_left" data-lang="lot_area">Площадь</p>
+                    <div class="card__info_right">20 <span data-lang="lot_value_hectares">соток</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
+                    <p class="card__info_left" data-lang="lot_certificate">Тип сертификата</p>
                     <div class="card__info_right">HGB</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
+                    <p class="card__info_left" data-lang="lot_road">Дорога</p>
+                    <div class="card__info_right" data-lang="lot_road_dirt">Грунтовая</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
+                    <p class="card__info_left" data-lang="lot_water">Вода</p>
+                    <div class="card__info_right">30<span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_ocean_view">Вид на океан</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_sunset_view">Вид на закат</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
+                    <p class="card__info_left" data-lang="lot_ocean_distance">Расстояние до океана</p>
+                    <div class="card__info_right">300 <span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
+                    <p class="card__info_left" data-lang="lot_price_per_are">Цена за сотку</p>
                     <div class="card__info_right">1840$</div>
                 </div>
                 <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
+                    <span class="more__label" data-lang="lot_details_more">Подробнее об участке</span>
                     <img class="more__icon" src="images/downArrow.svg" alt="">
                 </button>
                 <div class="collapsible">
                     <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
+                        <p class="card__info_left" data-lang="lot_certificate_year">Год выпуска сертификата </p>
                         <div class="card__info_right">2025</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
+                        <p class="card__info_left" data-lang="lot_certificate_status">Статус сертификата </p>
+                        <div class="card__info_right" data-lang="lot_value_non_agriculture">Non Agriculture</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
+                        <p class="card__info_left" data-lang="lot_land_purpose">Назначение земли </p>
+                        <div class="card__info_right" data-lang="lot_value_touristic">Touristic</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
+                        <p class="card__info_left" data-lang="lot_surveys">Геодезия, геология, анализ грунта: </p>
+                        <div class="card__info_right" data-lang="lot_surveys_done">проведены</div>
                     </div>
-                    <p class="description">
+                    <p class="description" data-lang="lot_description">
                         Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
 
                         Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
@@ -977,7 +977,7 @@
                         Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
                     </p>
                 </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
+                <a class="main__btn btn-green openPopup" data-lang="btn_book_lot">Забронировать участок</a>
             </div>
             <div class="location__card_imgs">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
@@ -1018,8 +1018,8 @@
                         <img src="images/loc2.webp" data-index="5" />
                 </div>
                     <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
+                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel" data-lang="3d_model">3D модель</a>
+                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s" data-lang="watch_video">
                             Смотреть видео
                             <img src="images/play.webp" alt="">
                         </a>
@@ -1034,59 +1034,59 @@
                     <p>36,800$</p>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
+                    <p class="card__info_left" data-lang="lot_area">Площадь</p>
+                    <div class="card__info_right">20 <span data-lang="lot_value_hectares">соток</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
+                    <p class="card__info_left" data-lang="lot_certificate">Тип сертификата</p>
                     <div class="card__info_right">HGB</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
+                    <p class="card__info_left" data-lang="lot_road">Дорога</p>
+                    <div class="card__info_right" data-lang="lot_road_dirt">Грунтовая</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
+                    <p class="card__info_left" data-lang="lot_water">Вода</p>
+                    <div class="card__info_right">30<span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_ocean_view">Вид на океан</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_sunset_view">Вид на закат</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
+                    <p class="card__info_left" data-lang="lot_ocean_distance">Расстояние до океана</p>
+                    <div class="card__info_right">300 <span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
+                    <p class="card__info_left" data-lang="lot_price_per_are">Цена за сотку</p>
                     <div class="card__info_right">1840$</div>
                 </div>
                 <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
+                    <span class="more__label" data-lang="lot_details_more">Подробнее об участке</span>
                     <img class="more__icon" src="images/downArrow.svg" alt="">
                 </button>
                 <div class="collapsible">
                     <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
+                        <p class="card__info_left" data-lang="lot_certificate_year">Год выпуска сертификата </p>
                         <div class="card__info_right">2025</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
+                        <p class="card__info_left" data-lang="lot_certificate_status">Статус сертификата </p>
+                        <div class="card__info_right" data-lang="lot_value_non_agriculture">Non Agriculture</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
+                        <p class="card__info_left" data-lang="lot_land_purpose">Назначение земли </p>
+                        <div class="card__info_right" data-lang="lot_value_touristic">Touristic</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
+                        <p class="card__info_left" data-lang="lot_surveys">Геодезия, геология, анализ грунта: </p>
+                        <div class="card__info_right" data-lang="lot_surveys_done">проведены</div>
                     </div>
-                    <p class="description">
+                    <p class="description" data-lang="lot_description">
                         Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
 
                         Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
@@ -1094,7 +1094,7 @@
                         Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
                     </p>
                 </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
+                <a class="main__btn btn-green openPopup" data-lang="btn_book_lot">Забронировать участок</a>
             </div>
             <div class="location__card_imgs">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
@@ -1135,8 +1135,8 @@
                         <img src="images/loc2.webp" data-index="5" />
                 </div>
                     <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
+                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel" data-lang="3d_model">3D модель</a>
+                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s" data-lang="watch_video">
                             Смотреть видео
                             <img src="images/play.webp" alt="">
                         </a>
@@ -1151,59 +1151,59 @@
                     <p>36,800$</p>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
+                    <p class="card__info_left" data-lang="lot_area">Площадь</p>
+                    <div class="card__info_right">20 <span data-lang="lot_value_hectares">соток</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
+                    <p class="card__info_left" data-lang="lot_certificate">Тип сертификата</p>
                     <div class="card__info_right">HGB</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
+                    <p class="card__info_left" data-lang="lot_road">Дорога</p>
+                    <div class="card__info_right" data-lang="lot_road_dirt">Грунтовая</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
+                    <p class="card__info_left" data-lang="lot_water">Вода</p>
+                    <div class="card__info_right">30<span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_ocean_view">Вид на океан</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_sunset_view">Вид на закат</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
+                    <p class="card__info_left" data-lang="lot_ocean_distance">Расстояние до океана</p>
+                    <div class="card__info_right">300 <span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
+                    <p class="card__info_left" data-lang="lot_price_per_are">Цена за сотку</p>
                     <div class="card__info_right">1840$</div>
                 </div>
                 <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
+                    <span class="more__label" data-lang="lot_details_more">Подробнее об участке</span>
                     <img class="more__icon" src="images/downArrow.svg" alt="">
                 </button>
                 <div class="collapsible">
                     <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
+                        <p class="card__info_left" data-lang="lot_certificate_year">Год выпуска сертификата </p>
                         <div class="card__info_right">2025</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
+                        <p class="card__info_left" data-lang="lot_certificate_status">Статус сертификата </p>
+                        <div class="card__info_right" data-lang="lot_value_non_agriculture">Non Agriculture</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
+                        <p class="card__info_left" data-lang="lot_land_purpose">Назначение земли </p>
+                        <div class="card__info_right" data-lang="lot_value_touristic">Touristic</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
+                        <p class="card__info_left" data-lang="lot_surveys">Геодезия, геология, анализ грунта: </p>
+                        <div class="card__info_right" data-lang="lot_surveys_done">проведены</div>
                     </div>
-                    <p class="description">
+                    <p class="description" data-lang="lot_description">
                         Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
 
                         Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
@@ -1211,7 +1211,7 @@
                         Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
                     </p>
                 </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
+                <a class="main__btn btn-green openPopup" data-lang="btn_book_lot">Забронировать участок</a>
             </div>
             <div class="location__card_imgs">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
@@ -1252,8 +1252,8 @@
                         <img src="images/loc2.webp" data-index="5" />
                 </div>
                     <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
+                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel" data-lang="3d_model">3D модель</a>
+                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s" data-lang="watch_video">
                             Смотреть видео
                             <img src="images/play.webp" alt="">
                         </a>
@@ -1268,59 +1268,59 @@
                     <p>36,800$</p>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
+                    <p class="card__info_left" data-lang="lot_area">Площадь</p>
+                    <div class="card__info_right">20 <span data-lang="lot_value_hectares">соток</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
+                    <p class="card__info_left" data-lang="lot_certificate">Тип сертификата</p>
                     <div class="card__info_right">HGB</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
+                    <p class="card__info_left" data-lang="lot_road">Дорога</p>
+                    <div class="card__info_right" data-lang="lot_road_dirt">Грунтовая</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
+                    <p class="card__info_left" data-lang="lot_water">Вода</p>
+                    <div class="card__info_right">30<span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_ocean_view">Вид на океан</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_sunset_view">Вид на закат</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
+                    <p class="card__info_left" data-lang="lot_ocean_distance">Расстояние до океана</p>
+                    <div class="card__info_right">300 <span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
+                    <p class="card__info_left" data-lang="lot_price_per_are">Цена за сотку</p>
                     <div class="card__info_right">1840$</div>
                 </div>
                 <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
+                    <span class="more__label" data-lang="lot_details_more">Подробнее об участке</span>
                     <img class="more__icon" src="images/downArrow.svg" alt="">
                 </button>
                 <div class="collapsible">
                     <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
+                        <p class="card__info_left" data-lang="lot_certificate_year">Год выпуска сертификата </p>
                         <div class="card__info_right">2025</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
+                        <p class="card__info_left" data-lang="lot_certificate_status">Статус сертификата </p>
+                        <div class="card__info_right" data-lang="lot_value_non_agriculture">Non Agriculture</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
+                        <p class="card__info_left" data-lang="lot_land_purpose">Назначение земли </p>
+                        <div class="card__info_right" data-lang="lot_value_touristic">Touristic</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
+                        <p class="card__info_left" data-lang="lot_surveys">Геодезия, геология, анализ грунта: </p>
+                        <div class="card__info_right" data-lang="lot_surveys_done">проведены</div>
                     </div>
-                    <p class="description">
+                    <p class="description" data-lang="lot_description">
                         Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
 
                         Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
@@ -1328,7 +1328,7 @@
                         Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
                     </p>
                 </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
+                <a class="main__btn btn-green openPopup" data-lang="btn_book_lot">Забронировать участок</a>
             </div>
             <div class="location__card_imgs">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
@@ -1369,8 +1369,8 @@
                         <img src="images/loc2.webp" data-index="5" />
                 </div>
                     <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
+                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel" data-lang="3d_model">3D модель</a>
+                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s" data-lang="watch_video">
                             Смотреть видео
                             <img src="images/play.webp" alt="">
                         </a>
@@ -1385,59 +1385,59 @@
                     <p>36,800$</p>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
+                    <p class="card__info_left" data-lang="lot_area">Площадь</p>
+                    <div class="card__info_right">20 <span data-lang="lot_value_hectares">соток</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
+                    <p class="card__info_left" data-lang="lot_certificate">Тип сертификата</p>
                     <div class="card__info_right">HGB</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
+                    <p class="card__info_left" data-lang="lot_road">Дорога</p>
+                    <div class="card__info_right" data-lang="lot_road_dirt">Грунтовая</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
+                    <p class="card__info_left" data-lang="lot_water">Вода</p>
+                    <div class="card__info_right">30<span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_ocean_view">Вид на океан</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_sunset_view">Вид на закат</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
+                    <p class="card__info_left" data-lang="lot_ocean_distance">Расстояние до океана</p>
+                    <div class="card__info_right">300 <span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
+                    <p class="card__info_left" data-lang="lot_price_per_are">Цена за сотку</p>
                     <div class="card__info_right">1840$</div>
                 </div>
                 <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
+                    <span class="more__label" data-lang="lot_details_more">Подробнее об участке</span>
                     <img class="more__icon" src="images/downArrow.svg" alt="">
                 </button>
                 <div class="collapsible">
                     <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
+                        <p class="card__info_left" data-lang="lot_certificate_year">Год выпуска сертификата </p>
                         <div class="card__info_right">2025</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
+                        <p class="card__info_left" data-lang="lot_certificate_status">Статус сертификата </p>
+                        <div class="card__info_right" data-lang="lot_value_non_agriculture">Non Agriculture</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
+                        <p class="card__info_left" data-lang="lot_land_purpose">Назначение земли </p>
+                        <div class="card__info_right" data-lang="lot_value_touristic">Touristic</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
+                        <p class="card__info_left" data-lang="lot_surveys">Геодезия, геология, анализ грунта: </p>
+                        <div class="card__info_right" data-lang="lot_surveys_done">проведены</div>
                     </div>
-                    <p class="description">
+                    <p class="description" data-lang="lot_description">
                         Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
 
                         Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
@@ -1445,7 +1445,7 @@
                         Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
                     </p>
                 </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
+                <a class="main__btn btn-green openPopup" data-lang="btn_book_lot">Забронировать участок</a>
             </div>
             <div class="location__card_imgs">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
@@ -1486,8 +1486,8 @@
                         <img src="images/loc2.webp" data-index="5" />
                 </div>
                     <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
+                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel" data-lang="3d_model">3D модель</a>
+                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s" data-lang="watch_video">
                             Смотреть видео
                             <img src="images/play.webp" alt="">
                         </a>
@@ -1502,59 +1502,59 @@
                     <p>36,800$</p>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
+                    <p class="card__info_left" data-lang="lot_area">Площадь</p>
+                    <div class="card__info_right">20 <span data-lang="lot_value_hectares">соток</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
+                    <p class="card__info_left" data-lang="lot_certificate">Тип сертификата</p>
                     <div class="card__info_right">HGB</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
+                    <p class="card__info_left" data-lang="lot_road">Дорога</p>
+                    <div class="card__info_right" data-lang="lot_road_dirt">Грунтовая</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
+                    <p class="card__info_left" data-lang="lot_water">Вода</p>
+                    <div class="card__info_right">30<span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_ocean_view">Вид на океан</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_sunset_view">Вид на закат</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
+                    <p class="card__info_left" data-lang="lot_ocean_distance">Расстояние до океана</p>
+                    <div class="card__info_right">300 <span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
+                    <p class="card__info_left" data-lang="lot_price_per_are">Цена за сотку</p>
                     <div class="card__info_right">1840$</div>
                 </div>
                 <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
+                    <span class="more__label" data-lang="lot_details_more">Подробнее об участке</span>
                     <img class="more__icon" src="images/downArrow.svg" alt="">
                 </button>
                 <div class="collapsible">
                     <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
+                        <p class="card__info_left" data-lang="lot_certificate_year">Год выпуска сертификата </p>
                         <div class="card__info_right">2025</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
+                        <p class="card__info_left" data-lang="lot_certificate_status">Статус сертификата </p>
+                        <div class="card__info_right" data-lang="lot_value_non_agriculture">Non Agriculture</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
+                        <p class="card__info_left" data-lang="lot_land_purpose">Назначение земли </p>
+                        <div class="card__info_right" data-lang="lot_value_touristic">Touristic</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
+                        <p class="card__info_left" data-lang="lot_surveys">Геодезия, геология, анализ грунта: </p>
+                        <div class="card__info_right" data-lang="lot_surveys_done">проведены</div>
                     </div>
-                    <p class="description">
+                    <p class="description" data-lang="lot_description">
                         Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
 
                         Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
@@ -1562,7 +1562,7 @@
                         Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
                     </p>
                 </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
+                <a class="main__btn btn-green openPopup" data-lang="btn_book_lot">Забронировать участок</a>
             </div>
             <div class="location__card_imgs">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
@@ -1603,8 +1603,8 @@
                         <img src="images/loc2.webp" data-index="5" />
                 </div>
                     <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
+                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel" data-lang="3d_model">3D модель</a>
+                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s" data-lang="watch_video">
                             Смотреть видео
                             <img src="images/play.webp" alt="">
                         </a>
@@ -1619,59 +1619,59 @@
                     <p>36,800$</p>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
+                    <p class="card__info_left" data-lang="lot_area">Площадь</p>
+                    <div class="card__info_right">20 <span data-lang="lot_value_hectares">соток</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
+                    <p class="card__info_left" data-lang="lot_certificate">Тип сертификата</p>
                     <div class="card__info_right">HGB</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
+                    <p class="card__info_left" data-lang="lot_road">Дорога</p>
+                    <div class="card__info_right" data-lang="lot_road_dirt">Грунтовая</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
+                    <p class="card__info_left" data-lang="lot_water">Вода</p>
+                    <div class="card__info_right">30<span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_ocean_view">Вид на океан</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_sunset_view">Вид на закат</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
+                    <p class="card__info_left" data-lang="lot_ocean_distance">Расстояние до океана</p>
+                    <div class="card__info_right">300 <span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
+                    <p class="card__info_left" data-lang="lot_price_per_are">Цена за сотку</p>
                     <div class="card__info_right">1840$</div>
                 </div>
                 <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
+                    <span class="more__label" data-lang="lot_details_more">Подробнее об участке</span>
                     <img class="more__icon" src="images/downArrow.svg" alt="">
                 </button>
                 <div class="collapsible">
                     <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
+                        <p class="card__info_left" data-lang="lot_certificate_year">Год выпуска сертификата </p>
                         <div class="card__info_right">2025</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
+                        <p class="card__info_left" data-lang="lot_certificate_status">Статус сертификата </p>
+                        <div class="card__info_right" data-lang="lot_value_non_agriculture">Non Agriculture</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
+                        <p class="card__info_left" data-lang="lot_land_purpose">Назначение земли </p>
+                        <div class="card__info_right" data-lang="lot_value_touristic">Touristic</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
+                        <p class="card__info_left" data-lang="lot_surveys">Геодезия, геология, анализ грунта: </p>
+                        <div class="card__info_right" data-lang="lot_surveys_done">проведены</div>
                     </div>
-                    <p class="description">
+                    <p class="description" data-lang="lot_description">
                         Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
 
                         Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
@@ -1679,7 +1679,7 @@
                         Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
                     </p>
                 </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
+                <a class="main__btn btn-green openPopup" data-lang="btn_book_lot">Забронировать участок</a>
             </div>
             <div class="location__card_imgs">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
@@ -1720,8 +1720,8 @@
                         <img src="images/loc2.webp" data-index="5" />
                 </div>
                     <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
+                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel" data-lang="3d_model">3D модель</a>
+                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s" data-lang="watch_video">
                             Смотреть видео
                             <img src="images/play.webp" alt="">
                         </a>
@@ -1736,59 +1736,59 @@
                     <p>36,800$</p>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
+                    <p class="card__info_left" data-lang="lot_area">Площадь</p>
+                    <div class="card__info_right">20 <span data-lang="lot_value_hectares">соток</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
+                    <p class="card__info_left" data-lang="lot_certificate">Тип сертификата</p>
                     <div class="card__info_right">HGB</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
+                    <p class="card__info_left" data-lang="lot_road">Дорога</p>
+                    <div class="card__info_right" data-lang="lot_road_dirt">Грунтовая</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
+                    <p class="card__info_left" data-lang="lot_water">Вода</p>
+                    <div class="card__info_right">30<span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_ocean_view">Вид на океан</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_sunset_view">Вид на закат</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
+                    <p class="card__info_left" data-lang="lot_ocean_distance">Расстояние до океана</p>
+                    <div class="card__info_right">300 <span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
+                    <p class="card__info_left" data-lang="lot_price_per_are">Цена за сотку</p>
                     <div class="card__info_right">1840$</div>
                 </div>
                 <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
+                    <span class="more__label" data-lang="lot_details_more">Подробнее об участке</span>
                     <img class="more__icon" src="images/downArrow.svg" alt="">
                 </button>
                 <div class="collapsible">
                     <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
+                        <p class="card__info_left" data-lang="lot_certificate_year">Год выпуска сертификата </p>
                         <div class="card__info_right">2025</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
+                        <p class="card__info_left" data-lang="lot_certificate_status">Статус сертификата </p>
+                        <div class="card__info_right" data-lang="lot_value_non_agriculture">Non Agriculture</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
+                        <p class="card__info_left" data-lang="lot_land_purpose">Назначение земли </p>
+                        <div class="card__info_right" data-lang="lot_value_touristic">Touristic</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
+                        <p class="card__info_left" data-lang="lot_surveys">Геодезия, геология, анализ грунта: </p>
+                        <div class="card__info_right" data-lang="lot_surveys_done">проведены</div>
                     </div>
-                    <p class="description">
+                    <p class="description" data-lang="lot_description">
                         Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
 
                         Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
@@ -1796,7 +1796,7 @@
                         Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
                     </p>
                 </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
+                <a class="main__btn btn-green openPopup" data-lang="btn_book_lot">Забронировать участок</a>
             </div>
             <div class="location__card_imgs">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
@@ -1837,8 +1837,8 @@
                         <img src="images/loc2.webp" data-index="5" />
                 </div>
                     <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
+                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel" data-lang="3d_model">3D модель</a>
+                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s" data-lang="watch_video">
                             Смотреть видео
                             <img src="images/play.webp" alt="">
                         </a>
@@ -1853,59 +1853,59 @@
                     <p>36,800$</p>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
+                    <p class="card__info_left" data-lang="lot_area">Площадь</p>
+                    <div class="card__info_right">20 <span data-lang="lot_value_hectares">соток</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
+                    <p class="card__info_left" data-lang="lot_certificate">Тип сертификата</p>
                     <div class="card__info_right">HGB</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
+                    <p class="card__info_left" data-lang="lot_road">Дорога</p>
+                    <div class="card__info_right" data-lang="lot_road_dirt">Грунтовая</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
+                    <p class="card__info_left" data-lang="lot_water">Вода</p>
+                    <div class="card__info_right">30<span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_ocean_view">Вид на океан</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_sunset_view">Вид на закат</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
+                    <p class="card__info_left" data-lang="lot_ocean_distance">Расстояние до океана</p>
+                    <div class="card__info_right">300 <span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
+                    <p class="card__info_left" data-lang="lot_price_per_are">Цена за сотку</p>
                     <div class="card__info_right">1840$</div>
                 </div>
                 <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
+                    <span class="more__label" data-lang="lot_details_more">Подробнее об участке</span>
                     <img class="more__icon" src="images/downArrow.svg" alt="">
                 </button>
                 <div class="collapsible">
                     <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
+                        <p class="card__info_left" data-lang="lot_certificate_year">Год выпуска сертификата </p>
                         <div class="card__info_right">2025</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
+                        <p class="card__info_left" data-lang="lot_certificate_status">Статус сертификата </p>
+                        <div class="card__info_right" data-lang="lot_value_non_agriculture">Non Agriculture</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
+                        <p class="card__info_left" data-lang="lot_land_purpose">Назначение земли </p>
+                        <div class="card__info_right" data-lang="lot_value_touristic">Touristic</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
+                        <p class="card__info_left" data-lang="lot_surveys">Геодезия, геология, анализ грунта: </p>
+                        <div class="card__info_right" data-lang="lot_surveys_done">проведены</div>
                     </div>
-                    <p class="description">
+                    <p class="description" data-lang="lot_description">
                         Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
 
                         Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
@@ -1913,7 +1913,7 @@
                         Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
                     </p>
                 </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
+                <a class="main__btn btn-green openPopup" data-lang="btn_book_lot">Забронировать участок</a>
             </div>
             <div class="location__card_imgs">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
@@ -1954,8 +1954,8 @@
                         <img src="images/loc2.webp" data-index="5" />
                 </div>
                     <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
+                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel" data-lang="3d_model">3D модель</a>
+                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s" data-lang="watch_video">
                             Смотреть видео
                             <img src="images/play.webp" alt="">
                         </a>
@@ -1970,59 +1970,59 @@
                     <p>36,800$</p>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
+                    <p class="card__info_left" data-lang="lot_area">Площадь</p>
+                    <div class="card__info_right">20 <span data-lang="lot_value_hectares">соток</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
+                    <p class="card__info_left" data-lang="lot_certificate">Тип сертификата</p>
                     <div class="card__info_right">HGB</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
+                    <p class="card__info_left" data-lang="lot_road">Дорога</p>
+                    <div class="card__info_right" data-lang="lot_road_dirt">Грунтовая</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
+                    <p class="card__info_left" data-lang="lot_water">Вода</p>
+                    <div class="card__info_right">30<span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_ocean_view">Вид на океан</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_sunset_view">Вид на закат</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
+                    <p class="card__info_left" data-lang="lot_ocean_distance">Расстояние до океана</p>
+                    <div class="card__info_right">300 <span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
+                    <p class="card__info_left" data-lang="lot_price_per_are">Цена за сотку</p>
                     <div class="card__info_right">1840$</div>
                 </div>
                 <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
+                    <span class="more__label" data-lang="lot_details_more">Подробнее об участке</span>
                     <img class="more__icon" src="images/downArrow.svg" alt="">
                 </button>
                 <div class="collapsible">
                     <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
+                        <p class="card__info_left" data-lang="lot_certificate_year">Год выпуска сертификата </p>
                         <div class="card__info_right">2025</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
+                        <p class="card__info_left" data-lang="lot_certificate_status">Статус сертификата </p>
+                        <div class="card__info_right" data-lang="lot_value_non_agriculture">Non Agriculture</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
+                        <p class="card__info_left" data-lang="lot_land_purpose">Назначение земли </p>
+                        <div class="card__info_right" data-lang="lot_value_touristic">Touristic</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
+                        <p class="card__info_left" data-lang="lot_surveys">Геодезия, геология, анализ грунта: </p>
+                        <div class="card__info_right" data-lang="lot_surveys_done">проведены</div>
                     </div>
-                    <p class="description">
+                    <p class="description" data-lang="lot_description">
                         Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
 
                         Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
@@ -2030,7 +2030,7 @@
                         Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
                     </p>
                 </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
+                <a class="main__btn btn-green openPopup" data-lang="btn_book_lot">Забронировать участок</a>
             </div>
             <div class="location__card_imgs">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
@@ -2071,8 +2071,8 @@
                         <img src="images/loc2.webp" data-index="5" />
                 </div>
                     <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
+                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel" data-lang="3d_model">3D модель</a>
+                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s" data-lang="watch_video">
                             Смотреть видео
                             <img src="images/play.webp" alt="">
                         </a>
@@ -2087,59 +2087,59 @@
                     <p>36,800$</p>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
+                    <p class="card__info_left" data-lang="lot_area">Площадь</p>
+                    <div class="card__info_right">20 <span data-lang="lot_value_hectares">соток</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
+                    <p class="card__info_left" data-lang="lot_certificate">Тип сертификата</p>
                     <div class="card__info_right">HGB</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
+                    <p class="card__info_left" data-lang="lot_road">Дорога</p>
+                    <div class="card__info_right" data-lang="lot_road_dirt">Грунтовая</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
+                    <p class="card__info_left" data-lang="lot_water">Вода</p>
+                    <div class="card__info_right">30<span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_ocean_view">Вид на океан</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_sunset_view">Вид на закат</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
+                    <p class="card__info_left" data-lang="lot_ocean_distance">Расстояние до океана</p>
+                    <div class="card__info_right">300 <span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
+                    <p class="card__info_left" data-lang="lot_price_per_are">Цена за сотку</p>
                     <div class="card__info_right">1840$</div>
                 </div>
                 <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
+                    <span class="more__label" data-lang="lot_details_more">Подробнее об участке</span>
                     <img class="more__icon" src="images/downArrow.svg" alt="">
                 </button>
                 <div class="collapsible">
                     <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
+                        <p class="card__info_left" data-lang="lot_certificate_year">Год выпуска сертификата </p>
                         <div class="card__info_right">2025</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
+                        <p class="card__info_left" data-lang="lot_certificate_status">Статус сертификата </p>
+                        <div class="card__info_right" data-lang="lot_value_non_agriculture">Non Agriculture</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
+                        <p class="card__info_left" data-lang="lot_land_purpose">Назначение земли </p>
+                        <div class="card__info_right" data-lang="lot_value_touristic">Touristic</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
+                        <p class="card__info_left" data-lang="lot_surveys">Геодезия, геология, анализ грунта: </p>
+                        <div class="card__info_right" data-lang="lot_surveys_done">проведены</div>
                     </div>
-                    <p class="description">
+                    <p class="description" data-lang="lot_description">
                         Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
 
                         Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
@@ -2147,7 +2147,7 @@
                         Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
                     </p>
                 </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
+                <a class="main__btn btn-green openPopup" data-lang="btn_book_lot">Забронировать участок</a>
             </div>
             <div class="location__card_imgs">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
@@ -2188,8 +2188,8 @@
                         <img src="images/loc2.webp" data-index="5" />
                 </div>
                     <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
+                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel" data-lang="3d_model">3D модель</a>
+                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s" data-lang="watch_video">
                             Смотреть видео
                             <img src="images/play.webp" alt="">
                         </a>
@@ -2204,59 +2204,59 @@
                     <p>36,800$</p>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
+                    <p class="card__info_left" data-lang="lot_area">Площадь</p>
+                    <div class="card__info_right">20 <span data-lang="lot_value_hectares">соток</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
+                    <p class="card__info_left" data-lang="lot_certificate">Тип сертификата</p>
                     <div class="card__info_right">HGB</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
+                    <p class="card__info_left" data-lang="lot_road">Дорога</p>
+                    <div class="card__info_right" data-lang="lot_road_dirt">Грунтовая</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
+                    <p class="card__info_left" data-lang="lot_water">Вода</p>
+                    <div class="card__info_right">30<span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_ocean_view">Вид на океан</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_sunset_view">Вид на закат</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
+                    <p class="card__info_left" data-lang="lot_ocean_distance">Расстояние до океана</p>
+                    <div class="card__info_right">300 <span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
+                    <p class="card__info_left" data-lang="lot_price_per_are">Цена за сотку</p>
                     <div class="card__info_right">1840$</div>
                 </div>
                 <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
+                    <span class="more__label" data-lang="lot_details_more">Подробнее об участке</span>
                     <img class="more__icon" src="images/downArrow.svg" alt="">
                 </button>
                 <div class="collapsible">
                     <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
+                        <p class="card__info_left" data-lang="lot_certificate_year">Год выпуска сертификата </p>
                         <div class="card__info_right">2025</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
+                        <p class="card__info_left" data-lang="lot_certificate_status">Статус сертификата </p>
+                        <div class="card__info_right" data-lang="lot_value_non_agriculture">Non Agriculture</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
+                        <p class="card__info_left" data-lang="lot_land_purpose">Назначение земли </p>
+                        <div class="card__info_right" data-lang="lot_value_touristic">Touristic</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
+                        <p class="card__info_left" data-lang="lot_surveys">Геодезия, геология, анализ грунта: </p>
+                        <div class="card__info_right" data-lang="lot_surveys_done">проведены</div>
                     </div>
-                    <p class="description">
+                    <p class="description" data-lang="lot_description">
                         Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
 
                         Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
@@ -2264,7 +2264,7 @@
                         Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
                     </p>
                 </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
+                <a class="main__btn btn-green openPopup" data-lang="btn_book_lot">Забронировать участок</a>
             </div>
             <div class="location__card_imgs">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
@@ -2305,8 +2305,8 @@
                         <img src="images/loc2.webp" data-index="5" />
                 </div>
                     <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
+                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel" data-lang="3d_model">3D модель</a>
+                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s" data-lang="watch_video">
                             Смотреть видео
                             <img src="images/play.webp" alt="">
                         </a>
@@ -2321,59 +2321,59 @@
                     <p>36,800$</p>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
+                    <p class="card__info_left" data-lang="lot_area">Площадь</p>
+                    <div class="card__info_right">20 <span data-lang="lot_value_hectares">соток</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
+                    <p class="card__info_left" data-lang="lot_certificate">Тип сертификата</p>
                     <div class="card__info_right">HGB</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
+                    <p class="card__info_left" data-lang="lot_road">Дорога</p>
+                    <div class="card__info_right" data-lang="lot_road_dirt">Грунтовая</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
+                    <p class="card__info_left" data-lang="lot_water">Вода</p>
+                    <div class="card__info_right">30<span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_ocean_view">Вид на океан</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
+                    <p class="card__info_left" data-lang="lot_sunset_view">Вид на закат</p>
+                    <div class="card__info_right" data-lang="lot_value_yes">есть</div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
+                    <p class="card__info_left" data-lang="lot_ocean_distance">Расстояние до океана</p>
+                    <div class="card__info_right">300 <span data-lang="lot_value_meters">м</span></div>
                 </div>
                 <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
+                    <p class="card__info_left" data-lang="lot_price_per_are">Цена за сотку</p>
                     <div class="card__info_right">1840$</div>
                 </div>
                 <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
+                    <span class="more__label" data-lang="lot_details_more">Подробнее об участке</span>
                     <img class="more__icon" src="images/downArrow.svg" alt="">
                 </button>
                 <div class="collapsible">
                     <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
+                        <p class="card__info_left" data-lang="lot_certificate_year">Год выпуска сертификата </p>
                         <div class="card__info_right">2025</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
+                        <p class="card__info_left" data-lang="lot_certificate_status">Статус сертификата </p>
+                        <div class="card__info_right" data-lang="lot_value_non_agriculture">Non Agriculture</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
+                        <p class="card__info_left" data-lang="lot_land_purpose">Назначение земли </p>
+                        <div class="card__info_right" data-lang="lot_value_touristic">Touristic</div>
                     </div>
                     <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
+                        <p class="card__info_left" data-lang="lot_surveys">Геодезия, геология, анализ грунта: </p>
+                        <div class="card__info_right" data-lang="lot_surveys_done">проведены</div>
                     </div>
-                    <p class="description">
+                    <p class="description" data-lang="lot_description">
                         Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
 
                         Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
@@ -2381,7 +2381,7 @@
                         Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
                     </p>
                 </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
+                <a class="main__btn btn-green openPopup" data-lang="btn_book_lot">Забронировать участок</a>
             </div>
             <div class="location__card_imgs">
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
@@ -2422,8 +2422,8 @@
                         <img src="images/loc2.webp" data-index="5" />
                 </div>
                     <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
+                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel" data-lang="3d_model">3D модель</a>
+                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s" data-lang="watch_video">
                             Смотреть видео
                             <img src="images/play.webp" alt="">
                         </a>
@@ -2431,602 +2431,18 @@
                 </div>
             </div>
         </div>
-        <div class="location__card">
-            <div class="location__card_info">
-                <div class="card__header">
-                    <h2>А-1</h2>
-                    <p>36,800$</p>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
-                    <div class="card__info_right">HGB</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
-                    <div class="card__info_right">1840$</div>
-                </div>
-                <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
-                    <img class="more__icon" src="images/downArrow.svg" alt="">
-                </button>
-                <div class="collapsible">
-                    <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
-                        <div class="card__info_right">2025</div>
-                    </div>
-                    <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
-                    </div>
-                    <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
-                    </div>
-                    <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
-                    </div>
-                    <p class="description">
-                        Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
-
-                        Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
-
-                        Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
-                    </p>
-                </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
-            </div>
-            <div class="location__card_imgs">
-                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="images/loc1.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div> 
-                <div class="location-thumbs">
-                        <img src="images/loc1.webp" data-index="0" />
-                        <img src="images/loc2.webp" data-index="1" />
-                        
-                        <img src="images/loc2.webp" data-index="2" />
-                        <img src="images/loc2.webp" data-index="3" />
-                </div>
-                <div class=" imgs-collapsible">
-
-                <div class="location-thumbs">
-                        <img src="images/loc2.webp" data-index="4" />
-                        <img src="images/loc2.webp" data-index="5" />
-                </div>
-                    <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
-                            Смотреть видео
-                            <img src="images/play.webp" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="location__card">
-            <div class="location__card_info">
-                <div class="card__header">
-                    <h2>А-1</h2>
-                    <p>36,800$</p>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
-                    <div class="card__info_right">HGB</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
-                    <div class="card__info_right">1840$</div>
-                </div>
-                <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
-                    <img class="more__icon" src="images/downArrow.svg" alt="">
-                </button>
-                <div class="collapsible">
-                    <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
-                        <div class="card__info_right">2025</div>
-                    </div>
-                    <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
-                    </div>
-                    <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
-                    </div>
-                    <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
-                    </div>
-                    <p class="description">
-                        Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
-
-                        Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
-
-                        Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
-                    </p>
-                </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
-            </div>
-            <div class="location__card_imgs">
-                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="images/loc1.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div> 
-                <div class="location-thumbs">
-                        <img src="images/loc1.webp" data-index="0" />
-                        <img src="images/loc2.webp" data-index="1" />
-                        
-                        <img src="images/loc2.webp" data-index="2" />
-                        <img src="images/loc2.webp" data-index="3" />
-                </div>
-                <div class=" imgs-collapsible">
-
-                <div class="location-thumbs">
-                        <img src="images/loc2.webp" data-index="4" />
-                        <img src="images/loc2.webp" data-index="5" />
-                </div>
-                    <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
-                            Смотреть видео
-                            <img src="images/play.webp" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="location__card">
-            <div class="location__card_info">
-                <div class="card__header">
-                    <h2>А-1</h2>
-                    <p>36,800$</p>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
-                    <div class="card__info_right">HGB</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
-                    <div class="card__info_right">1840$</div>
-                </div>
-                <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
-                    <img class="more__icon" src="images/downArrow.svg" alt="">
-                </button>
-                <div class="collapsible">
-                    <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
-                        <div class="card__info_right">2025</div>
-                    </div>
-                    <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
-                    </div>
-                    <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
-                    </div>
-                    <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
-                    </div>
-                    <p class="description">
-                        Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
-
-                        Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
-
-                        Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
-                    </p>
-                </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
-            </div>
-            <div class="location__card_imgs">
-                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="images/loc1.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div> 
-                <div class="location-thumbs">
-                        <img src="images/loc1.webp" data-index="0" />
-                        <img src="images/loc2.webp" data-index="1" />
-                        
-                        <img src="images/loc2.webp" data-index="2" />
-                        <img src="images/loc2.webp" data-index="3" />
-                </div>
-                <div class=" imgs-collapsible">
-
-                <div class="location-thumbs">
-                        <img src="images/loc2.webp" data-index="4" />
-                        <img src="images/loc2.webp" data-index="5" />
-                </div>
-                    <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
-                            Смотреть видео
-                            <img src="images/play.webp" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="location__card">
-            <div class="location__card_info">
-                <div class="card__header">
-                    <h2>А-1</h2>
-                    <p>36,800$</p>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
-                    <div class="card__info_right">HGB</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
-                    <div class="card__info_right">1840$</div>
-                </div>
-                <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
-                    <img class="more__icon" src="images/downArrow.svg" alt="">
-                </button>
-                <div class="collapsible">
-                    <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
-                        <div class="card__info_right">2025</div>
-                    </div>
-                    <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
-                    </div>
-                    <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
-                    </div>
-                    <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
-                    </div>
-                    <p class="description">
-                        Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
-
-                        Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
-
-                        Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
-                    </p>
-                </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
-            </div>
-            <div class="location__card_imgs">
-                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="images/loc1.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div> 
-                <div class="location-thumbs">
-                        <img src="images/loc1.webp" data-index="0" />
-                        <img src="images/loc2.webp" data-index="1" />
-                        
-                        <img src="images/loc2.webp" data-index="2" />
-                        <img src="images/loc2.webp" data-index="3" />
-                </div>
-                <div class=" imgs-collapsible">
-
-                <div class="location-thumbs">
-                        <img src="images/loc2.webp" data-index="4" />
-                        <img src="images/loc2.webp" data-index="5" />
-                </div>
-                    <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
-                            Смотреть видео
-                            <img src="images/play.webp" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="location__card">
-            <div class="location__card_info">
-                <div class="card__header">
-                    <h2>А-1</h2>
-                    <p>36,800$</p>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Площадь</p>
-                    <div class="card__info_right">20 соток</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Тип сертификата</p>
-                    <div class="card__info_right">HGB</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Дорога</p>
-                    <div class="card__info_right">Грунтовая</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Вода</p>
-                    <div class="card__info_right">30м</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Вид на океан</p>
-                    <div class="card__info_right">есть</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Вид на закат</p>
-                    <div class="card__info_right">есть</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Расстояние до океана</p>
-                    <div class="card__info_right">300 м</div>
-                </div>
-                <div class="card__info">
-                    <p class="card__info_left">Цена за сотку</p>
-                    <div class="card__info_right">1840$</div>
-                </div>
-                <button class="more">
-                    <span class="more__label">Подробнее об участке</span>
-                    <img class="more__icon" src="images/downArrow.svg" alt="">
-                </button>
-                <div class="collapsible">
-                    <div class="card__info">
-                        <p class="card__info_left">Год выпуска сертификата </p>
-                        <div class="card__info_right">2025</div>
-                    </div>
-                    <div class="card__info">
-                        <p class="card__info_left">Статус сертификата </p>
-                        <div class="card__info_right">Non Agriculture</div>
-                    </div>
-                    <div class="card__info">
-                        <p class="card__info_left">Назначение земли </p>
-                        <div class="card__info_right">Touristic</div>
-                    </div>
-                    <div class="card__info">
-                        <p class="card__info_left">Геодезия, геология, анализ грунта: </p>
-                        <div class="card__info_right">проведены</div>
-                    </div>
-                    <p class="description">
-                        Этот уникальный земельный участок расположен на западном побережье Сумбавы, всего в 200 метрах от океана с кристально чистой водой и уединёнными пляжами. Площадь участка составляет 2 га, что идеально подходит для строительства виллы, эко-курорта или инвестиционного проекта.
-
-                        Окружённый живописными холмами и зеленью, участок предоставляет великолепные виды на океан и закаты, создавая атмосферу абсолютного спокойствия. Все коммуникации и инфраструктура находятся в шаговой доступности, а тип сертификата HSB гарантирует безопасность сделки.
-
-                        Участок идеально подходит как для личного проекта, так и для получения прибыли от аренды или перепродажи. Инвестируйте в будущее в одном из самых перспективных регионов Индонезии!
-                    </p>
-                </div>
-                <a class="main__btn btn-green openPopup">Забронировать участок</a>
-            </div>
-            <div class="location__card_imgs">
-                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="images/loc1.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/loc2.webp" />
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div> 
-                <div class="location-thumbs">
-                        <img src="images/loc1.webp" data-index="0" />
-                        <img src="images/loc2.webp" data-index="1" />
-                        
-                        <img src="images/loc2.webp" data-index="2" />
-                        <img src="images/loc2.webp" data-index="3" />
-                </div>
-                <div class=" imgs-collapsible">
-
-                <div class="location-thumbs">
-                        <img src="images/loc2.webp" data-index="4" />
-                        <img src="images/loc2.webp" data-index="5" />
-                </div>
-                    <div class="btns">
-                        <a href="https://earth.google.com/earth/d/12KmWbiq9GTXRVmXiC5eOXBlA9uzWB8jY?usp=sharing" class="3dmodel">3D модель</a>
-                        <a class="yt-popup-trigger" data-youtube="https://www.youtube.com/watch?v=EBlgHf0nS4s">
-                            Смотреть видео
-                            <img src="images/play.webp" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
         
         <div class="form__block" id="contacts">
-            <h2 class="title__dark">Заполните форму</h2>
-            <p class="form__text">Оставьте заявку, чтобы узнать все детали и забронировать участок своей мечты!</p>
+            <h2 class="title__dark" data-lang="form_title">Заполните форму</h2>
+            <p class="form__text" data-lang="form_subtitle">Оставьте заявку, чтобы узнать все детали и забронировать участок своей мечты!</p>
             <div class="form__container">
                 <form action="send.php" method="POST"
                     class="form-row js-contact-form" id="contactForm">
 
                 <!-- = =  Общие поля --------------------------------------------->
-                <input class="pill" type="text"  placeholder="Ваше имя" name="name"  required />
-                <input class="pill" type="email" placeholder="E‑mail"   name="email" />
+                <input class="pill" type="text" placeholder="Ваше имя" name="name" data-lang-placeholder="form_name" required />
+                <input class="pill" type="email" placeholder="E‑mail" name="email" data-lang-placeholder="form_email" />
                 <!-- = =  выбор канала ------------------------------------------->
                 <div class="contact-method">
                     <label class="contact-method__item">
@@ -3043,23 +2459,23 @@
                 <!-- = =  WhatsApp -------------------------------------------------->
                 <div class="method method--whatsapp">
                     <input class="pill js-phone" type="tel"
-                        placeholder="Whatsapp" name="whatsapp" />
+                        placeholder="Whatsapp" name="whatsapp" data-lang-placeholder="form_whatsapp" />
                 </div>
 
                 <!-- = =  Telegram (по умолчанию выключен) ------------------------->
                 <div class="method method--telegram" data-disabled>
                     <input class="pill js-phone" type="tel"
-                        placeholder="Телефон Telegram" name="tg_phone" disabled />
+                        placeholder="Телефон Telegram" name="tg_phone" data-lang-placeholder="form_telegram_phone" disabled />
                     <input class="pill tg-pill" type="text"
-                        placeholder="Ник Telegram"     name="tg_username" disabled />
+                        placeholder="Ник Telegram" name="tg_username" data-lang-placeholder="form_telegram_nick" disabled />
                 </div>
 
-                <button class="main__btn btn-green" type="submit">Связаться с нами</button>
+                <button class="main__btn btn-green" type="submit" data-lang="btn_contact">Связаться с нами</button>
                 </form>
 
                 <img src="images/form_img.webp" class="form__img" alt="">
             </div>
-            <span class="small__text">*<a href="privacy.html">Я даю согласие</a> на то, чтобы Banana Bay хранила мои личные данные для предоставления мне соответствующей информации. Banana Bay не будет передавать эти данные третьим лицам.</span>
+            <span class="small__text" data-lang="form_privacy">*<a href="privacy.html">Я даю согласие</a> на то, чтобы Banana Bay хранила мои личные данные для предоставления мне соответствующей информации. Banana Bay не будет передавать эти данные третьим лицам.</span>
         </div>
     </div>
     <footer class="footer">
@@ -3109,8 +2525,8 @@
             <div class="popup__content_header">
                 <img src="images/icon_close.png" id="closePopup" alt="">
             </div>
-            <h2>Заполните форму</h2>
-            <p>Оставьте заявку, чтобы узнать все детали и забронировать участок своей мечты!</p>
+            <h2 data-lang="popup_title">Заполните форму</h2>
+            <p data-lang="form_subtitle">Оставьте заявку, чтобы узнать все детали и забронировать участок своей мечты!</p>
                         <form action="send.php"
                 method="POST"
                 class="popup__form js-contact-form"
@@ -3118,14 +2534,16 @@
 
                 <input class="pill"
                         type="text"
-                        placeholder="Ваше имя"
+                        placeholder="Ваше имя"
                         name="name"
+                        data-lang-placeholder="form_name"
                         required>
 
                 <input class="pill"
                         type="email"
                         placeholder="E‑mail"
-                        name="email">
+                        name="email"
+                        data-lang-placeholder="form_email">
 
                 <div class="contact-method">
                     <label class="contact-method__item">
@@ -3143,35 +2561,38 @@
                     <input class="pill js-phone"
                         type="tel"
                         placeholder="Whatsapp"
-                        name="whatsapp">
+                        name="whatsapp"
+                        data-lang-placeholder="form_whatsapp">
                 </div>
 
                 <div class="method method--telegram" data-disabled>
                     <input class="pill js-phone"
                         type="tel"
-                        placeholder="Телефон Telegram"
+                        placeholder="Телефон Telegram"
                         name="tg_phone"
+                        data-lang-placeholder="form_telegram_phone"
                         disabled>
                     <input class="pill tg-pill"
                         type="text"
-                        placeholder="Ник Telegram"
+                        placeholder="Ник Telegram"
                         name="tg_username"
+                        data-lang-placeholder="form_telegram_nick"
                         disabled>
                 </div>
 
-                <button class="main__btn btn-green" type="submit">Связаться с нами</button>
+                <button class="main__btn btn-green" type="submit" data-lang="btn_contact">Связаться с нами</button>
             </form>
 
 
-            <span>*<a href="privacy.html">Я даю согласие</a> на то, чтобы Banana Bay хранила мои личные данные для предоставления мне соответствующей информации. Banana Bay не будет передавать эти данные третьим лицам.</span>
+            <span data-lang="form_privacy">*<a href="privacy.html">Я даю согласие</a> на то, чтобы Banana Bay хранила мои личные данные для предоставления мне соответствующей информации. Banana Bay не будет передавать эти данные третьим лицам.</span>
         </div>
     </div>
 
     <div class="popupSuccess" id="popupSuccess">
         <div class="popupSuccess__content">
-            <h2>Спасибо! Заявка отправлена!</h2>
-            <p>Ожидайте, скоро наш менеджер с Вами свяжется!</p>
-            <button id="closeSuccess">Закрыть</button>
+            <h2 data-lang="success_title">Спасибо!</h2>
+            <p data-lang="success_text_long">Ожидайте, скоро наш менеджер с Вами свяжется!</p>
+            <button id="closeSuccess" data-lang="success_close">Закрыть</button>
         </div>
     </div>
     
@@ -3179,13 +2600,14 @@
         <picture>
             <source srcset="images/WhatsAppButtonGreenSmall.svg" media="(max-width: 549px)">
             <source srcset="images/WhatsAppButtonGreenMedium.svg" media="(max-width: 767px)">
-            <img src="images/WhatsAppButtonGreenLarge.svg" alt="Chat on WhatsApp">
+            <img src="images/WhatsAppButtonGreenLarge.svg" alt="Chat on WhatsApp" data-lang-alt="whatsapp_aria">
         </picture>
     </a>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/yt_popup.js"></script>
 
+    <script src="js/translations.js"></script>
     <script src="js/locations.js"></script>
     <script src="js/menu.js"></script><script
     src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"

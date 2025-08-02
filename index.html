@@ -26,14 +26,14 @@
         <header class="header">
             <img src="images/logo.svg" alt="" class="header__logo" loading="lazy">
             <ul class="header__menu">
-                <li class="header__menu_item"><a href="locations.html">Участки</a></li>
-                <li class="header__menu_item"><a href="#about">О Сумбаве</a></li>
-                <li class="header__menu_item"><a href="#investment">Инвесторам</a></li>
-                <li class="header__menu_item"><a href="#advantages">Преимущества</a></li>
-                <li class="header__menu_item"><a href="#contacts">Контакты</a></li>
+                <li class="header__menu_item"><a href="locations.html" data-lang="nav_lots">Участки</a></li>
+                <li class="header__menu_item"><a href="#about" data-lang="nav_about">О Сумбаве</a></li>
+                <li class="header__menu_item"><a href="#investment" data-lang="nav_investors">Инвесторам</a></li>
+                <li class="header__menu_item"><a href="#advantages" data-lang="nav_advantages">Преимущества</a></li>
+                <li class="header__menu_item"><a href="#contacts" data-lang="nav_contacts">Контакты</a></li>
             </ul>
             <div class="header__end">
-                <button class="subscribe openPopup" id="openPopup">
+                <button class="subscribe openPopup" id="openPopup" data-lang="btn_contact">
                     Связаться с нами
                 </button>
                 <p class="lang">RU</p>
@@ -47,14 +47,14 @@
                 <img src="images/closeMenu.webp" class="sidebar__close" alt="" loading="lazy">
                 </div>
                 <ul class="sidebar__nav">
-                    <li class="sidebar__item"><a href="locations.html">Участки</a></li>
-                    <li class="sidebar__item"><a href="#about">О Сумбаве</a></li>
-                    <li class="sidebar__item"><a href="#investment">Инвесторам</a></li>
-                    <li class="sidebar__item"><a href="#advantages">Преимущества</a></li>
-                    <li class="sidebar__item"><a href="#contacts">Контакты</a></li>
+                    <li class="sidebar__item"><a href="locations.html" data-lang="nav_lots">Участки</a></li>
+                    <li class="sidebar__item"><a href="#about" data-lang="nav_about">О Сумбаве</a></li>
+                    <li class="sidebar__item"><a href="#investment" data-lang="nav_investors">Инвесторам</a></li>
+                    <li class="sidebar__item"><a href="#advantages" data-lang="nav_advantages">Преимущества</a></li>
+                    <li class="sidebar__item"><a href="#contacts" data-lang="nav_contacts">Контакты</a></li>
                 </ul>
 
-                <button class="sidebar__cta subscribe main__btn">Связаться с нами</button>
+                <button class="sidebar__cta subscribe main__btn" data-lang="btn_contact">Связаться с нами</button>
 
                 <address class="sidebar__contacts">
                     <p class="sidebar__contacts_yellow">PT PMA<br><br>Banana Bay Sumbawa</p><br><br>
@@ -72,17 +72,17 @@
 
                 <p class="sidebar__copy">All Rights Reserved. 2025</p>
                 <p class="sidebar__madeBy">
-                    Website made by <a href="http://toster-media.online/">Toster Media</a>
+                    <span data-lang="footer_made_by">Website made by</span> <a href="http://toster-media.online/">Toster Media</a>
                 </p>
             </div>
         </aside>
         <div class="hero">
             <img src="images/hero_bg.webp" loading="lazy" fetchpriority="high" class="hero__bg" alt="">
             <div class="hero__top">
-                <h1 class="hero__top_title">Видовые участки <br> у океана</h1>
+                <h1 class="hero__top_title" data-lang="hero_title">Видовые участки <br> у океана</h1>
                 <div class="hero__top_right">
-                    <p>Самый привлекательный инвестиционный остров в <span>Индонезии</span></p>
-                    <a href="locations.html" class="main__btn hero_top_btn">
+                    <p data-lang="hero_subtitle">Самый привлекательный инвестиционный остров в <span>Индонезии</span></p>
+                    <a href="locations.html" class="main__btn hero_top_btn" data-lang="btn_view_lots">
                         Посмотреть все участки
                     </a>
                 </div>
@@ -90,18 +90,18 @@
             <div class="hero__advants">
                 <div class="hero__advants_item">
                     <img src="images/advant1.webp" alt="" loading="lazy">
-                    <p>Открытие аэропорта Киантар в 2025 году</p>
+                    <p data-lang="hero_advantage_1">Открытие аэропорта Киантар в 2025 году</p>
                 </div>
                 <div class="hero__advants_item">
                     <img src="images/advant2.webp" alt="" loading="lazy">
-                    <p>За последние 4 года, цены на землю выросли в 3 раза</p>
+                    <p data-lang="hero_advantage_2">За последние 4 года, цены на землю выросли в 3 раза</p>
                 </div>
                 <div class="hero__advants_item">
                     <img src="images/advant3.webp" alt="" loading="lazy">
-                    <p>Заработок на туристах и бизнес-клиентах Amman Mineral</p>
+                    <p data-lang="hero_advantage_3">Заработок на туристах и бизнес-клиентах Amman Mineral</p>
                 </div>
             </div>
-            <a href="locations.html" class="main__btn hero_bottom_btn">
+            <a href="locations.html" class="main__btn hero_bottom_btn" data-lang="btn_view_lots">
                 Посмотреть все участки
             </a>
             <a href="#locations" class="hero__scroll">
@@ -118,19 +118,19 @@
                 </picture>
                 
                 <div class="cta">
-                    <a href="locations.html" class="main__btn">Посмотреть все участки</a>
+                    <a href="locations.html" class="main__btn" data-lang="btn_view_lots">Посмотреть все участки</a>
                 </div>
             </div>
         </div>
 
         <div class="why" id="about">
-            <h2 class="title__dark">Чем интересна Сумбава?</h2>
+            <h2 class="title__dark" data-lang="about_title">Чем интересна Сумбава?</h2>
             <div class="why__content">
             <div class="why__left">
                 <div class="second-card">
                     <div class="box">
-                        <h3>Спокойствие</h3>
-                        <p> Сумбава - это остров уединения, природной красоты и простора.Здесь вы найдёте пустынные пляжи, минимальный дорожный трафик и спокойный ритм жизни. Это идеальное место для строительства дома мечты - будь то уединённое ранчо, просторная вилла или уютное семейное жильё.</p>
+                        <h3 data-lang="about_peace_title">Спокойствие</h3>
+                        <p data-lang="about_peace_text"> Сумбава - это остров уединения, природной красоты и простора.Здесь вы найдёте пустынные пляжи, минимальный дорожный трафик и спокойный ритм жизни. Это идеальное место для строительства дома мечты - будь то уединённое ранчо, просторная вилла или уютное семейное жильё.</p>
                     </div>
                     
                     <div class="cta">
@@ -139,8 +139,8 @@
                 </div>
                 <div class="second-card">
                     <div class="box">
-                        <h3>Серфинг мирового уровня</h3>
-                        <p>Остров предлагает уникальные споты с чистыми волнами и стабильными условиями, подходящими как для профессионалов, так и для начинающих. Без излишней туристической нагрузки, Сумбава позволяет сосредоточиться на океане, практике и настоящем ощущении свободы.</p>
+                        <h3 data-lang="about_surf_title">Серфинг мирового уровня</h3>
+                        <p data-lang="about_surf_text">Остров предлагает уникальные споты с чистыми волнами и стабильными условиями, подходящими как для профессионалов, так и для начинающих. Без излишней туристической нагрузки, Сумбава позволяет сосредоточиться на океане, практике и настоящем ощущении свободы.</p>
                     </div>
                     
                     <div class="cta">
@@ -151,53 +151,53 @@
 
             <div class="why__right">
                 <img src="images/serfer.webp" loading="lazy" class="why__right_bg" alt="">
-                <p class="why__right_txt">Остров окружён потрясающими пейзажами: горы, пляжи, океан. Это место вдохновляет и позволяет жить в гармонии с природой</p>
+                <p class="why__right_txt" data-lang="about_nature_text">Остров окружён потрясающими пейзажами: горы, пляжи, океан. Это место вдохновляет и позволяет жить в гармонии с природой</p>
             </div>
             </div>
         </div>
     </div>
         <div class="investors" id="investment">
-            <h2 class="title__light">Почему <span>инвесторам</span> интересна Западная Сумбава</h2>
+            <h2 class="title__light" data-lang="investors_title">Почему <span>инвесторам</span> интересна Западная Сумбава</h2>
             <div class="investors__cards">
                 <div class="investors__cards_item">
-                    <h3>Отсутствует рынок вилл</h3>
-                    <p>Конкуренция на рынке жилья очень низкая, спрос растет. Есть отели, но полностью отсутствует рынок вилл</p>
+                    <h3 data-lang="investor_point_1_title">Отсутствует рынок вилл</h3>
+                    <p data-lang="investor_point_1_text">Конкуренция на рынке жилья очень низкая, спрос растет. Есть отели, но полностью отсутствует рынок вилл</p>
                 </div>
                 <div class="investors__cards_item">
-                    <h3>Экономика, не зависящая исключительно от туризма</h3>
-                    <p>Ведущую роль играет Amman Mineral, вокруг которой формируется экосистема подрядчиков и сервисных компаний</p>
+                    <h3 data-lang="investor_point_2_title">Экономика, не зависящая исключительно от туризма</h3>
+                    <p data-lang="investor_point_2_text">Ведущую роль играет Amman Mineral, вокруг которой формируется экосистема подрядчиков и сервисных компаний</p>
                 </div>
                 <div class="investors__cards_item">
-                    <h3>Владение землей</h3>
-                    <p>Большинство земель продается только во FreeHold или HGB (аренда земли на 80 лет)</p>
+                    <h3 data-lang="investor_point_3_title">Владение землей</h3>
+                    <p data-lang="investor_point_3_text">Большинство земель продается только во FreeHold или HGB (аренда земли на 80 лет)</p>
                 </div>
                 <div class="investors__cards_item">
-                    <h3>Низкая стоимость земли</h3>
-                    <p>Доступные цены на участки с потенциалом роста x2, x3 в ближайшие 2 года</p>
+                    <h3 data-lang="investor_point_4_title">Низкая стоимость земли</h3>
+                    <p data-lang="investor_point_4_text">Доступные цены на участки с потенциалом роста x2, x3 в ближайшие 2 года</p>
                 </div>
             </div>
             <div class="investors__cards_item investors__cards_item-bg">
-                <h3>Открытие аэропорта Киантар в 2025 году</h3>
-                <p>Приведёт к росту туристического и корпоративного трафика, что напрямую повлияет на стоимость земли и недвижимости в регионе</p>
+                <h3 data-lang="investor_airport_title">Открытие аэропорта Киантар в 2025 году</h3>
+                <p data-lang="investor_airport_text">Приведёт к росту туристического и корпоративного трафика, что напрямую повлияет на стоимость земли и недвижимости в регионе</p>
             </div>
         </div>
 
         <div class="amman" id="advantages">
             <img src="images/amman_bg.webp" class="amman__bg" loading="lazy" fetchpriority="high" alt="">
-            <h2 class="title__light">
+            <h2 class="title__light" data-lang="amman_title">
                 Почему Западная Сумбава развивается последние 20 лет
             </h2>
             <div class="amman__top">
                 <div class="amman__top_left">
                     <div class="orange_amman">
-                        <p><span>Amman Mineral</span> — одна из крупнейших компаний в Индонезии по добыче меди и золота</p>
+                        <p data-lang="amman_description"><span>Amman Mineral</span> — одна из крупнейших компаний в Индонезии по добыче меди и золота</p>
                     </div>
                     <div class="amman-advants">
                         <div class="amman-advants-item advants-1">
-                            <h3>Входит в топ 6 по добыче меди</h3>
+                            <h3 data-lang="amman_copper_top">Входит в топ 6 по добыче меди</h3>
                         </div>
                         <div class="amman-advants-item advants-2">
-                            <h3>Входит в топ 10 по добыче золота в мире</h3>
+                            <h3 data-lang="amman_gold_top">Входит в топ 10 по добыче золота в мире</h3>
                         </div>
                     </div>
                 </div>
@@ -205,19 +205,19 @@
                     <img src="images/amman_logo.webp" class="amman_logo" alt="" loading="lazy">
                     <div class="amman-factories">
                         <div class="amman-factories-item">
-                            <p>Компания активно развивает региональную инфраструктуру: дороги, административные объекты, построила новый аэропорт</p>
+                            <p data-lang="amman_infrastructure">Компания активно развивает региональную инфраструктуру: дороги, административные объекты, построила новый аэропорт</p>
                             <img src="images/check.png" alt="" loading="lazy">
                         </div>
                         <div class="amman-factories-item">
-                            <p>Более 300 подрядных компаний работают на Amman Mineral</p>
+                            <p data-lang="amman_contractors">Более 300 подрядных компаний работают на Amman Mineral</p>
                             <img src="images/check.png" alt="" loading="lazy">
                         </div>
                         <div class="amman-factories-item">
-                            <p>В регионе функционирует 1 крупная шахта, оценочная стоимость добычи которой составляет 45 млрд. долларов на ближайшие 40 лет</p>
+                            <p data-lang="amman_mine_value">В регионе функционирует 1 крупная шахта, оценочная стоимость добычи которой составляет 45 млрд. долларов на ближайшие 40 лет</p>
                             <img src="images/check.png" alt="" loading="lazy">
                         </div>
                         <div class="amman-factories-item">
-                            <p>На стадии разработки находится еще 6 шахт, в 2026 году планируется открытие новой шахты</p>
+                            <p data-lang="amman_new_mines">На стадии разработки находится еще 6 шахт, в 2026 году планируется открытие новой шахты</p>
                             <img src="images/check.png" alt="" loading="lazy">
                         </div>
                     </div>
@@ -251,32 +251,32 @@
 
 
             </div>
-            <h2 class="amman__text">
+            <h2 class="amman__text" data-lang="amman_stability">
                 Amman Mineral — это <span>устойчивый фактор развития региона</span>, даже в периоды войны и пандемии COVID
             </h2>
         </div>
 
         <div class="anotherAdvants">
             <div class="anotherAdvants__left">
-                <h3>Почему <span>Banana Bay</span>?</h3>
-                <p>Banana Bay — идеальное место для создания личного оазиса вдали от шума и городской суеты</p>
+                <h3 data-lang="banana_bay_title">Почему <span>Banana Bay</span>?</h3>
+                <p data-lang="banana_bay_subtitle">Banana Bay — идеальное место для создания личного оазиса вдали от шума и городской суеты</p>
             </div>
             <div class="anotherAdvants__right">
                 <div class="anotherAdvants__right_item">
                     <img src="images/adv1.webp" alt="" loading="lazy">
-                    <p>Все участки расположены на возвышенности <span>с потрясающим видом на вулкан Ринжани</span></p>
+                    <p data-lang="banana_bay_adv_1">Все участки расположены на возвышенности <span>с потрясающим видом на вулкан Ринжани</span></p>
                 </div>
                 <div class="anotherAdvants__right_item">
                     <img src="images/adv2.webp" alt="" loading="lazy">
-                    <p>В бухте расположено <span>4 приватных пляжа</span></p>
+                    <p data-lang="banana_bay_adv_2">В бухте расположено <span>4 приватных пляжа</span></p>
                 </div>
                 <div class="anotherAdvants__right_item">
                     <img src="images/adv3.webp" alt="" loading="lazy">
-                    <p>Прямой доступ к приватному серф-споту и акватории для дайвинга</p>
+                    <p data-lang="banana_bay_adv_3">Прямой доступ к приватному серф-споту и акватории для дайвинга</p>
                 </div>
                 <div class="anotherAdvants__right_item">
                     <img src="images/adv4.webp" alt="" loading="lazy">
-                    <p>Отсутствие жилых деревень, религиозных объектов и ферм - только тишина, природа и ощущение уединения</p>
+                    <p data-lang="banana_bay_adv_4">Отсутствие жилых деревень, религиозных объектов и ферм - только тишина, природа и ощущение уединения</p>
                 </div>
             </div>
         </div>
@@ -284,7 +284,7 @@
     <div class="wrapper">
         <div class="interest">
             <div class="interest__title">
-                <h2 class="title__dark">Почему Сумбава интереснее чем Бали</h2>
+                <h2 class="title__dark" data-lang="comparison_title">Почему Сумбава интереснее чем Бали</h2>
             </div>
             <div class="interest__hero">
                 <div class="box">
@@ -292,19 +292,19 @@
                 </div>
                 
                 <div class="cta">
-                    <h3>Сумбава</h3>
-                    <p>Сумбава - это как Алтай с океаном. Широкая, дикая, нет пробок, загруженности пляжей и серф спотов.</p>
+                    <h3 data-lang="sumbawa_title">Сумбава</h3>
+                    <p data-lang="sumbawa_description">Сумбава - это как Алтай с океаном. Широкая, дикая, нет пробок, загруженности пляжей и серф спотов.</p>
                 </div>
             </div>
             <div class="interest__cards">
                 <div class="interest__cards_item interest__cards-1">
-                    <h3>Сумбава</h3>
-                    <p>Сумбава - это как Алтай с океаном. Широкая, дикая, нет пробок, загруженности пляжей и серф спотов.</p>
+                    <h3 data-lang="sumbawa_title">Сумбава</h3>
+                    <p data-lang="sumbawa_description">Сумбава - это как Алтай с океаном. Широкая, дикая, нет пробок, загруженности пляжей и серф спотов.</p>
                 </div>
                 <div class="interest__cards_item">
                     <div class="interest__cards_item-left">
                         <img src="images/cash.webp" alt="" loading="lazy">
-                        <h3>Стоимость</h3>
+                        <h3 data-lang="cost_title">Стоимость</h3>
                     </div>
                     <p>
                         Земля у воды: Бали - 50,000 - 70,000 долларов за сотку
@@ -314,20 +314,20 @@
                 <div class="interest__cards_item">
                     <div class="interest__cards_item-left">
                         <img src="images/opponent.webp" alt="" loading="lazy">
-                        <h3>Низкая конкуренция</h3>
+                        <h3 data-lang="competition_title">Низкая конкуренция</h3>
                     </div>
-                    <p>Рынок Бали перегрет и держать стабильный доход на объектах недвижимости становится всё труднее.</p>
+                                          <p data-lang="competition_text">Рынок Бали перегрет и держать стабильный доход на объектах недвижимости становится всё труднее.</p>
                 </div>
             </div>
         </div>
 
         <div class="strategy">
-            <h2 class="title__dark">Стратегия для инвестирования</h2>
+            <h2 class="title__dark" data-lang="strategy_title">Стратегия для инвестирования</h2>
             <div class="strategy__cards">
                 <div class="strategy__cards_item">
                     <div class="box">
-                        <h3 class="strategy__content_ttl">Покупка, <br> разделение <br> и перепродажа</h3>
-                        <p class="strategy__content_txt">
+                        <h3 class="strategy__content_ttl" data-lang="strategy_1_title">Покупка, <br> разделение <br> и перепродажа</h3>
+                        <p class="strategy__content_txt" data-lang="strategy_1_text">
                             Инвестируйте в участок, разделите его на лоты и зарабатывайте на поэтапной перепродаже
                         </p>
                     </div>
@@ -338,8 +338,8 @@
                 </div>
                 <div class="strategy__cards_item">
                     <div class="box">
-                        <h3 class="strategy__content_ttl">Разработка <br> девелоперских <br> проектов</h3>
-                        <p class="strategy__content_txt">
+                        <h3 class="strategy__content_ttl" data-lang="strategy_2_title">Разработка <br> девелоперских <br> проектов</h3>
+                        <p class="strategy__content_txt" data-lang="strategy_2_text">
                             Оказываем поддержу на всех этапах - от концепции и проектирования до ввода объекта в эксплуатацию и управления
                         </p>
                     </div>
@@ -350,8 +350,8 @@
                 </div>
                 <div class="strategy__cards_item">
                     <div class="box">
-                        <h3 class="strategy__content_ttl">Строительство <br> коммерческой <br> недвижимости</h3>
-                        <p class="strategy__content_txt">
+                        <h3 class="strategy__content_ttl" data-lang="strategy_3_title">Строительство <br> коммерческой <br> недвижимости</h3>
+                        <p class="strategy__content_txt" data-lang="strategy_3_text">
                             Отели, рестораны, клубы, коворкинги - любая форма бизнеса под развитие в уникальной локации
                         </p>
                     </div>
@@ -364,70 +364,70 @@
         </div>
 
         <div class="structure">
-            <h2 class="title__dark">Отели региона</h2>
+            <h2 class="title__dark" data-lang="hotels_title">Отели региона</h2>
             <div class="swiper mySwiper2">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide custom-slide">
                         <img src="images/s21.webp" alt="" loading="lazy">
                         <div class="slider__desc">
                             <h3>Kini Resort</h3>
-                            <p>Бамбуковые эко-домики на берегу океана</p>
+                            <p data-lang="hotel_kini">Бамбуковые эко-домики на берегу океана</p>
                         </div>
                     </div>
                     <div class="swiper-slide custom-slide">
                         <img src="images/s22.webp" alt="" loading="lazy">
                         <div class="slider__desc">
                             <h3>Whales & Waves</h3>
-                            <p>Пляжный курорт</p>
+                            <p data-lang="hotel_whales">Пляжный курорт</p>
                         </div>
                     </div>
                     <div class="swiper-slide custom-slide">
                         <img src="images/mocean.webp" alt="" loading="lazy">
                         <div class="slider__desc">
                             <h3>Mocean dive resort</h3>
-                            <p>Пляжный дайв и серф курорт</p>
+                            <p data-lang="hotel_mocean">Пляжный дайв и серф курорт</p>
                         </div>
                     </div>
                     <div class="swiper-slide custom-slide">
                         <img src="images/kertasari.webp" alt="" loading="lazy">
                         <div class="slider__desc">
                             <h3>Kertasari Lodge</h3>
-                            <p>Отель с бассейном</p>
+                            <p data-lang="hotel_kertasari">Отель с бассейном</p>
                         </div>
                     </div>
                     <div class="swiper-slide custom-slide">
                         <img src="images/baha.webp" alt="" loading="lazy">
                         <div class="slider__desc">
                             <h3>Baha Baha Villas</h3>
-                            <p>Комплекс вилл</p>
+                            <p data-lang="hotel_baha">Комплекс вилл</p>
                         </div>
                     </div>
                     <div class="swiper-slide custom-slide">
                         <img src="images/baha.webp" alt="" loading="lazy">
                         <div class="slider__desc">
                             <h3>Baha Baha Villas</h3>
-                            <p>Комплекс вилл</p>
+                            <p data-lang="hotel_baha">Комплекс вилл</p>
                         </div>
                     </div>
                     <div class="swiper-slide custom-slide">
                         <img src="images/baha.webp" alt="" loading="lazy">
                         <div class="slider__desc">
                             <h3>Baha Baha Villas</h3>
-                            <p>Комплекс вилл</p>
+                            <p data-lang="hotel_baha">Комплекс вилл</p>
                         </div>
                     </div>
                     <div class="swiper-slide custom-slide">
                         <img src="images/baha.webp" alt="" loading="lazy">
                         <div class="slider__desc">
                             <h3>Baha Baha Villas</h3>
-                            <p>Комплекс вилл</p>
+                            <p data-lang="hotel_baha">Комплекс вилл</p>
                         </div>
                     </div>
                     <div class="swiper-slide custom-slide">
                         <img src="images/baha.webp" alt="" loading="lazy">
                         <div class="slider__desc">
                             <h3>Baha Baha Villas</h3>
-                            <p>Комплекс вилл</p>
+                            <p data-lang="hotel_baha">Комплекс вилл</p>
                         </div>
                     </div>
                     
@@ -439,9 +439,9 @@
 
         <div class="steps">
             <div class="steps__title">
-                <h2 class="title__dark">Этапы взаимодействия <br> перед покупкой</h2>
-                <p class="steps__title_end">
-                    Мы сделали процесс покупки <br> простым и удобным
+                <h2 class="title__dark" data-lang="steps_title">Этапы взаимодействия <br> перед покупкой</h2>
+                <p class="steps__title_end" data-lang="steps_subtitle">
+                    Мы сделали процесс покупки <br> простым и удобным
                 </p>
             </div>
             <ul class="accordion">
@@ -454,13 +454,11 @@
                             </div>
                         </div>
                         <div class="accordion-header-right">
-                            <p>
-                                Онлайн‑звонок или офлайн‑встреча
-                            </p>
+                            <p data-lang="step_1">Онлайн‑звонок или офлайн‑встреча</p>
                             <img src="images/acc_arrow.svg" class="chevron" alt="" loading="lazy">
                         </div>
                     </button>
-                    <div class="panel"><div class="panel-content">Обсуждаем цели, формат участия и подбираем наиболее подходящие направления для инвестиций</div></div>
+                    <div class="panel"><div class="panel-content" data-lang="step_1_desc">Обсуждаем цели, формат участия и подбираем наиболее подходящие направления для инвестиций</div></div>
                 </li>
 
                 <li class="accordion-item green">
@@ -473,11 +471,11 @@
                         </div>
                         
                         <div class="accordion-header-right">
-                            <p>Выбор участка и бронирование</p>
+                            <p data-lang="step_2">Выбор участка и бронирование</p>
                             <img src="images/acc_arrow.svg" class="chevron" alt="" loading="lazy">
                         </div>
                     </button>
-                    <div class="panel"><div class="panel-content">Совместно определяем участок, после чего он фиксируется за вами</div></div>
+                    <div class="panel"><div class="panel-content" data-lang="step_2_desc">Совместно определяем участок, после чего он фиксируется за вами</div></div>
                 </li>
 
                 <li class="accordion-item b-orange">
@@ -489,11 +487,11 @@
                             </div>
                         </div>
                         <div class="accordion-header-right">
-                            <p>Внесение предоплаты и заключение сделки</p>
+                            <p data-lang="step_3">Внесение предоплаты и заключение сделки</p>
                             <img src="images/acc_arrow.svg" class="chevron" alt="" loading="lazy">
                         </div>
                     </button>
-                    <div class="panel"><div class="panel-content">После бронирования осуществляется предоплата, мы сопровождаем процесс оформления до завершения сделки</div></div>
+                    <div class="panel"><div class="panel-content" data-lang="step_3_desc">После бронирования осуществляется предоплата, мы сопровождаем процесс оформления до завершения сделки</div></div>
                 </li>
 
                 <li class="accordion-item b-orange">
@@ -505,11 +503,11 @@
                             </div>
                         </div>
                         <div class="accordion-header-right">
-                            <p>Оформление документов и выпуск сертификата</p>
+                            <p data-lang="step_4">Оформление документов и выпуск сертификата</p>
                             <img src="images/acc_arrow.svg" class="chevron" alt="">
                         </div>
                     </button>
-                    <div class="panel"><div class="panel-content">Готовим весь пакет документов и обеспечиваем выпуск официального сертификата</div></div>
+                    <div class="panel"><div class="panel-content" data-lang="step_4_desc">Готовим весь пакет документов и обеспечиваем выпуск официального сертификата</div></div>
                 </li>
 
                 <li class="accordion-item">
@@ -521,25 +519,25 @@
                             </div>
                         </div>
                         <div class="accordion-header-right">
-                            <p>Определение концепции и выбор подрядчика</p>
+                            <p data-lang="step_5">Определение концепции и выбор подрядчика</p>
                             <img src="images/acc_arrow.svg" class="chevron" alt="" loading="lazy">
                         </div>
                     </button>
-                    <div class="panel"><div class="panel-content">Помогаем сформировать архитектурную идею, подбираем исполнителей и оказываем полную поддержку на этом этапе</div></div>
+                    <div class="panel"><div class="panel-content" data-lang="step_5_desc">Помогаем сформировать архитектурную идею, подбираем исполнителей и оказываем полную поддержку на этом этапе</div></div>
                 </li>
             </ul>
         </div>
 
         <div class="form__block" id="contacts">
-            <h2 class="title__dark">Заполните форму</h2>
-            <p class="form__text">Оставьте заявку, чтобы узнать все детали и забронировать участок своей мечты!</p>
+            <h2 class="title__dark" data-lang="form_title">Заполните форму</h2>
+            <p class="form__text" data-lang="form_subtitle">Оставьте заявку, чтобы узнать все детали и забронировать участок своей мечты!</p>
             <div class="form__container">
                 <form action="send.php" method="POST"
                     class="form-row js-contact-form" id="contactForm">
 
                 <!-- = =  Общие поля --------------------------------------------->
-                <input class="pill" type="text"  placeholder="Ваше имя" name="name"  required />
-                <input class="pill" type="email" placeholder="E‑mail"   name="email" />
+                <input class="pill" type="text"  placeholder="Ваше имя" name="name" data-lang-placeholder="form_name" required />
+                <input class="pill" type="email" placeholder="E‑mail" name="email" data-lang-placeholder="form_email" />
                 <!-- = =  выбор канала ------------------------------------------->
                 <div class="contact-method">
                     <label class="contact-method__item">
@@ -556,25 +554,25 @@
                 <!-- = =  WhatsApp -------------------------------------------------->
                 <div class="method method--whatsapp">
                     <input class="pill js-phone" type="tel"
-                        placeholder="Whatsapp" name="whatsapp" />
+                        placeholder="Whatsapp" name="whatsapp" data-lang-placeholder="form_whatsapp" />
                 </div>
 
                 <!-- = =  Telegram (по умолчанию выключен) ------------------------->
                 <div class="method method--telegram" data-disabled>
                     <input class="pill js-phone" type="tel"
-                        placeholder="Телефон Telegram" name="tg_phone" disabled />
+                        placeholder="Телефон Telegram" name="tg_phone" data-lang-placeholder="form_telegram_phone" disabled />
                     <input class="pill tg-pill" type="text"
-                        placeholder="Ник Telegram"     name="tg_username" disabled />
+                        placeholder="Ник Telegram"     name="tg_username" data-lang-placeholder="form_telegram_nick" disabled />
                 </div>
 
-                <button class="main__btn btn-green" type="submit">Связаться с нами</button>
+                <button class="main__btn btn-green" type="submit" data-lang="btn_contact">Связаться с нами</button>
                 </form>
 
                 <img src="images/form_img.webp" class="form__img" alt="">
             </div>
 
             <div class="error" id="formError" style="color:red; margin-top:1em;"></div>
-            <span class="small__text">*<a href="privacy.html">Я даю согласие</a> на то, чтобы Banana Bay хранила мои личные данные для предоставления мне соответствующей информации. Banana Bay не будет передавать эти данные третьим лицам.</span>
+            <span class="small__text" data-lang="form_privacy">*<a href="privacy.html">Я даю согласие</a> на то, чтобы Banana Bay хранила мои личные данные для предоставления мне соответствующей информации. Banana Bay не будет передавать эти данные третьим лицам.</span>
         </div>
     </div>
     <footer class="footer">
@@ -614,8 +612,8 @@
             <div class="popup__content_header">
                 <img src="images/icon_close.png" id="closePopup" alt="">
             </div>
-            <h2>Заполните форму</h2>
-            <p>Оставьте заявку, чтобы узнать все детали и забронировать участок своей мечты!</p>
+            <h2 data-lang="popup_title">Заполните форму</h2>
+            <p data-lang="popup_subtitle">Оставьте заявку, чтобы узнать все детали и забронировать участок своей мечты!</p>
             <form action="send.php"
                 method="POST"
                 class="popup__form js-contact-form"
@@ -623,14 +621,16 @@
 
                 <input class="pill"
                         type="text"
-                        placeholder="Ваше имя"
+                        placeholder="Ваше имя"
                         name="name"
+                        data-lang-placeholder="form_name"
                         required>
 
                 <input class="pill"
                         type="email"
                         placeholder="E‑mail"
-                        name="email">
+                        name="email"
+                        data-lang-placeholder="form_email">
 
                 <div class="contact-method">
                     <label class="contact-method__item">
@@ -648,34 +648,37 @@
                     <input class="pill js-phone"
                         type="tel"
                         placeholder="Whatsapp"
-                        name="whatsapp">
+                        name="whatsapp"
+                        data-lang-placeholder="form_whatsapp">
                 </div>
 
                 <div class="method method--telegram" data-disabled>
                     <input class="pill js-phone"
                         type="tel"
-                        placeholder="Телефон Telegram"
+                        placeholder="Телефон Telegram"
                         name="tg_phone"
+                        data-lang-placeholder="form_telegram_phone"
                         disabled>
                     <input class="pill tg-pill"
                         type="text"
-                        placeholder="Ник Telegram"
+                        placeholder="Ник Telegram"
                         name="tg_username"
+                        data-lang-placeholder="form_telegram_nick"
                         disabled>
                 </div>
 
-                <button class="main__btn btn-green" type="submit">Связаться с нами</button>
+                <button class="main__btn btn-green" type="submit" data-lang="btn_contact">Связаться с нами</button>
             </form>
 
-            <span>*<a href="privacy.html">Я даю согласие</a> на то, чтобы Banana Bay хранила мои личные данные для предоставления мне соответствующей информации. Banana Bay не будет передавать эти данные третьим лицам.</span>
+                            <span data-lang="form_privacy">*<a href="privacy.html">Я даю согласие</a> на то, чтобы Banana Bay хранила мои личные данные для предоставления мне соответствующей информации. Banana Bay не будет передавать эти данные третьим лицам.</span>
         </div>
     </div>
 
     <div class="popupSuccess" id="popupSuccess" style="display: none;">
         <div class="popupSuccess__content">
-            <h2 id="popupSuccessTitle">Спасибо!</h2>
-            <p id="popupSuccessText">Заявка отправлена!</p>
-            <button id="closeSuccess">Закрыть</button>
+            <h2 id="popupSuccessTitle" data-lang="success_title">Спасибо!</h2>
+            <p id="popupSuccessText" data-lang="success_text">Заявка отправлена!</p>
+            <button id="closeSuccess" data-lang="success_close">Закрыть</button>
         </div>
     </div>
 
@@ -695,6 +698,7 @@
         referrerpolicy="no-referrer"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"></script>
+    <script src="js/translations.js"></script>
     <script src="js/form.js"></script>
     <script src="js/main.js"></script>
     <script src="js/menu.js"></script>
