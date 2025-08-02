@@ -58,18 +58,7 @@
             text-decoration: none;
         }
 
-        .lang {
-            padding: 10px;
-            border-radius: 30px;
-            background: #92CDF1;
-            box-shadow: 0px 4px 8px 0px rgba(188, 188, 188, 0.04);
-            color: #FFF;
-            font-family: Geologica;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 120%;
-        }
+
     }
 
     &__burger {
@@ -117,6 +106,20 @@
             }
         }
     }
+}
+.lang {
+    padding: 10px;
+    border-radius: 30px;
+    background: #92CDF1;
+    box-shadow: 0px 4px 8px 0px rgba(188, 188, 188, 0.04);
+    color: #FFF;
+    font-family: Geologica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    width: 40px;
+    height: 40px;
 }
 
 .sidebar {
@@ -223,8 +226,7 @@
 @media screen and (max-width: 980px) {
  .header {
     /* прячем только меню и (если нужно) языковую метку */
-    &__menu,
-    &__end .lang {
+    &__menu {
       display: none;
     }
 
@@ -248,4 +250,10 @@
     .header__end .subscribe {
         font-size: 12px;
     }
+}
+
+@media screen and (max-width: 480px) {
+    .header__end .lang {
+        display: none;
+    }   
 }

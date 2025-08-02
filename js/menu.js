@@ -21,7 +21,7 @@ sidebarClose.addEventListener('click', () => {
 })
 
 // Функциональность переключения языка
-const langElement = document.querySelector('.lang');
+const langElements = document.querySelectorAll('.lang');
 
 // Функция определения языка браузера
 function detectBrowserLanguage() {
@@ -51,10 +51,10 @@ console.log('Язык определен автоматически по бра�
 
 let currentLanguage = savedLanguage.toLowerCase();
 
-// Устанавливаем начальный язык
-if (langElement) {
-    langElement.textContent = savedLanguage;
-}
+// Устанавливаем начальный язык для всех кнопок
+langElements.forEach(element => {
+    element.textContent = savedLanguage;
+});
 
 // Функция для перевода всех элементов на странице
 function translatePage(language) {
@@ -114,8 +114,8 @@ function translatePage(language) {
     console.log('Перевод завершен!');
 }
 
-// Обработчик клика на элемент языка
-if (langElement) {
+// Обработчик клика на все элементы языка
+langElements.forEach(langElement => {
     langElement.addEventListener('click', () => {
         console.log('Клик по переключателю языка');
         
@@ -123,12 +123,14 @@ if (langElement) {
         console.log('Текущий язык:', currentLang);
         
         if (currentLang === 'RU') {
-            langElement.textContent = 'EN';
+            // Обновляем текст всех кнопок
+            langElements.forEach(el => el.textContent = 'EN');
             currentLanguage = 'en';
             localStorage.setItem('siteLanguage', 'EN');
             switchToEnglish();
         } else {
-            langElement.textContent = 'RU';
+            // Обновляем текст всех кнопок
+            langElements.forEach(el => el.textContent = 'RU');
             currentLanguage = 'ru';
             localStorage.setItem('siteLanguage', 'RU');
             switchToRussian();
@@ -137,7 +139,7 @@ if (langElement) {
         // Переводим все элементы на странице
         translatePage(currentLanguage);
     });
-}
+});
 
 // Функция переключения на английский язык
 function switchToEnglish() {
@@ -163,6 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('🌍 Информация о языке:');
     console.log('  - Язык браузера:', navigator.language);
     console.log('  - Определенный язык сайта:', savedLanguage);
+    console.log('  - Найдено кнопок переключения языка:', langElements.length);
     console.log('📝 Язык определяется автоматически при каждой загрузке страницы');
     
     if (savedLanguage === 'EN') {

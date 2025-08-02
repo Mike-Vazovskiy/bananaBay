@@ -12,7 +12,7 @@ document.querySelectorAll('.location__card').forEach(card => {
         if (imgBlock) imgBlock.classList.toggle('open');
 
         // переключаем состояние кнопки
-        btn.classList.toggle('open');
+        btn.classList.toggle('open'); 
         label.textContent = btn.classList.contains('open') ? 'Свернуть' : 'Подробнее об участке';
     });
 });
@@ -65,46 +65,72 @@ document.querySelectorAll('.location__card').forEach((card) => {
   setActiveThumb(0);
 });
 
-   const whatsappButton = document.querySelector('.whatsapp');
-    const locations = document.querySelector('#locations');
-    const footer = document.querySelector('.footer');
+const whatsappButton = document.querySelector('.whatsapp');
+const locations = document.querySelector('#locations');
+const footer = document.querySelector('.footer');
 
-    const defaultBottom = 50; // px
+const defaultBottom = 30; // px (уменьшено для более компактного расположения)
+let lastTranslateY = 0; // Для сглаживания изменений
 
-    const updateButtonState = () => {
-        const scrollY = window.scrollY;
-        const windowHeight = window.innerHeight;
+const updateButtonState = () => {
+    const scrollY = window.scrollY;
+    const windowHeight = window.innerHeight;
 
-        const locationsRect = locations.getBoundingClientRect();
-        const locationsTop = scrollY + locationsRect.top;
-        const locationsHeight = locations.offsetHeight;
-        const locationsMid = locationsTop + (locationsHeight / 2);
+    const locationsRect = locations.getBoundingClientRect();
+    const locationsTop = scrollY + locationsRect.top;
+    const locationsHeight = locations.offsetHeight;
+    const locationsMid = locationsTop + (locationsHeight / 2);
 
-        const footerRect = footer.getBoundingClientRect();
-        const footerTop = scrollY + footerRect.top;
+    const footerRect = footer.getBoundingClientRect();
+    const footerTop = scrollY + footerRect.top;
 
-        const buttonHeight = whatsappButton.offsetHeight;
+    const buttonHeight = whatsappButton.offsetHeight;
 
-        // Появление кнопки
-        if (scrollY + windowHeight >= locationsMid) {
-            whatsappButton.classList.add('visible');
-        } else {
-            whatsappButton.classList.remove('visible');
-        }
+    // Появление кнопки
+    if (scrollY + windowHeight >= locationsMid) {
+        whatsappButton.classList.add('visible');
+    } else {
+        whatsappButton.classList.remove('visible');
+    }
 
-        // Проверка: близко ли кнопка к футеру
-        const distanceFromBottom = document.documentElement.scrollHeight - (scrollY + windowHeight);
+    // Проверка: близко ли кнопка к футеру
+    const buffer = -65; // Уменьшен буфер для меньшего поднятия
+    const stopPoint = footerTop - buttonHeight - buffer;
+    const overlap = Math.max(0, scrollY + windowHeight - stopPoint);
 
-        const footerHeight = footer.offsetHeight;
-        const stopPoint = footerTop - buttonHeight + 60; // 20px буфер
+    // Сглаживание только при движении вверх, для движения вниз — мгновенно
+    const targetTranslateY = overlap > 0 ? -overlap : 0;
+    const smoothingFactor = targetTranslateY < lastTranslateY ? 0.4 : 1; // Быстрее вниз (1 = без сглаживания)
+    const smoothedTranslateY = lastTranslateY + (targetTranslateY - lastTranslateY) * smoothingFactor;
+    lastTranslateY = smoothedTranslateY;
 
-        if ((scrollY + windowHeight) > stopPoint) {
-            const overlap = (scrollY + windowHeight) - stopPoint;
-            whatsappButton.style.transform = `translateY(-${overlap}px)`;
-        } else {
-            whatsappButton.style.transform = `translateY(0)`;
-        }
-    };
+    whatsappButton.style.transform = `translateY(${smoothedTranslateY}px)`;
 
-    window.addEventListener('scroll', updateButtonState);
-    window.addEventListener('resize', updateButtonState);
+    // Продолжаем обновление, если страница прокручивается
+    if (isScrolling) {
+        requestAnimationFrame(updateButtonState);
+    }
+};
+
+// Запускаем обновление только при скролле или ресайзе
+let isScrolling = false;
+window.addEventListener('scroll', () => {
+    if (!isScrolling) {
+        isScrolling = true;
+        requestAnimationFrame(updateButtonState);
+    }
+});
+window.addEventListener('resize', () => {
+    if (!isScrolling) {
+        isScrolling = true;
+        requestAnimationFrame(updateButtonState);
+    }
+});
+
+// Останавливаем requestAnimationFrame, когда скролл прекращается
+window.addEventListener('scroll', () => {
+    clearTimeout(window.scrollEndTimer);
+    window.scrollEndTimer = setTimeout(() => {
+        isScrolling = false;
+    }, 100); // Уменьшено до 100 мс для большей отзывчивости
+});
