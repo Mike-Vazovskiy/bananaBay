@@ -23,8 +23,32 @@ sidebarClose.addEventListener('click', () => {
 // Функциональность переключения языка
 const langElement = document.querySelector('.lang');
 
-// Проверяем сохраненный язык при загрузке страницы
-const savedLanguage = localStorage.getItem('siteLanguage') || 'RU';
+// Функция определения языка браузера
+function detectBrowserLanguage() {
+    const browserLang = navigator.language || navigator.languages[0];
+    console.log('Язык браузера:', browserLang);
+    
+    // Если язык браузера русский, возвращаем 'RU', иначе 'EN'
+    if (browserLang.toLowerCase().startsWith('ru')) {
+        return 'RU';
+    } else {
+        return 'EN';
+    }
+}
+
+// Функция для принудительного обновления языка (для тестирования)
+function refreshLanguage() {
+    console.log('Обновляю язык...');
+    location.reload();
+}
+
+// Добавляем функцию в глобальную область для тестирования
+window.refreshLanguage = refreshLanguage;
+
+// ВСЕГДА определяем язык по браузеру при загрузке страницы
+let savedLanguage = detectBrowserLanguage();
+console.log('Язык определен автоматически по браузеру:', savedLanguage);
+
 let currentLanguage = savedLanguage.toLowerCase();
 
 // Устанавливаем начальный язык
@@ -133,9 +157,13 @@ function switchToRussian() {
     document.body.classList.remove('lang-en');
 }
 
-// Применяем сохраненный язык при загрузке
+// Применяем определенный язык при загрузке
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM загружен, применяю сохраненный язык:', savedLanguage);
+    console.log('DOM загружен, применяю язык:', savedLanguage);
+    console.log('🌍 Информация о языке:');
+    console.log('  - Язык браузера:', navigator.language);
+    console.log('  - Определенный язык сайта:', savedLanguage);
+    console.log('📝 Язык определяется автоматически при каждой загрузке страницы');
     
     if (savedLanguage === 'EN') {
         currentLanguage = 'en';
