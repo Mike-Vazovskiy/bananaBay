@@ -42,18 +42,34 @@ function refreshLanguage() {
     location.reload();
 }
 
-// Добавляем функцию в глобальную область для тестирования
-window.refreshLanguage = refreshLanguage;
+// Функция для очистки сохраненного языка (симуляция первого визита)
+function resetLanguageChoice() {
+    localStorage.removeItem('siteLanguage');
+    console.log('Язык сброшен. Перезагрузите страницу для симуляции первого визита.');
+    location.reload();
+}
 
-// ВСЕГДА определяем язык по браузеру при загрузке страницы
-let savedLanguage = detectBrowserLanguage();
-console.log('Язык определен автоматически по браузеру:', savedLanguage);
+// Добавляем функции в глобальную область для тестирования
+window.refreshLanguage = refreshLanguage;
+window.resetLanguageChoice = resetLanguageChoice;
+
+// Проверяем, есть ли сохраненный язык пользователя
+let savedLanguage = localStorage.getItem('siteLanguage');
+
+// Если нет сохраненного языка (первый визит), определяем по браузеру
+if (!savedLanguage) {
+    savedLanguage = detectBrowserLanguage();
+    localStorage.setItem('siteLanguage', savedLanguage);
+    console.log('Первый визит - язык определен по браузеру:', savedLanguage);
+} else {
+    console.log('Используем сохраненный язык пользователя:', savedLanguage);
+}
 
 let currentLanguage = savedLanguage.toLowerCase();
 
-// Устанавливаем начальный язык для всех кнопок
+// Устанавливаем начальный текст кнопок (показываем язык, НА КОТОРЫЙ можно переключиться)
 langElements.forEach(element => {
-    element.textContent = savedLanguage;
+    element.textContent = savedLanguage === 'RU' ? 'EN' : 'RU';
 });
 
 // Функция для перевода всех элементов на странице
@@ -119,18 +135,18 @@ langElements.forEach(langElement => {
     langElement.addEventListener('click', () => {
         console.log('Клик по переключателю языка');
         
-        const currentLang = langElement.textContent;
-        console.log('Текущий язык:', currentLang);
+        const buttonText = langElement.textContent;
+        console.log('Текст кнопки (язык для переключения):', buttonText);
         
-        if (currentLang === 'RU') {
-            // Обновляем текст всех кнопок
-            langElements.forEach(el => el.textContent = 'EN');
+        if (buttonText === 'EN') {
+            // Кнопка показывает 'EN' - переключаемся на английский
+            langElements.forEach(el => el.textContent = 'RU');
             currentLanguage = 'en';
             localStorage.setItem('siteLanguage', 'EN');
             switchToEnglish();
         } else {
-            // Обновляем текст всех кнопок
-            langElements.forEach(el => el.textContent = 'RU');
+            // Кнопка показывает 'RU' - переключаемся на русский
+            langElements.forEach(el => el.textContent = 'EN');
             currentLanguage = 'ru';
             localStorage.setItem('siteLanguage', 'RU');
             switchToRussian();
@@ -164,9 +180,9 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM загружен, применяю язык:', savedLanguage);
     console.log('🌍 Информация о языке:');
     console.log('  - Язык браузера:', navigator.language);
-    console.log('  - Определенный язык сайта:', savedLanguage);
+    console.log('  - Текущий язык сайта:', savedLanguage);
     console.log('  - Найдено кнопок переключения языка:', langElements.length);
-    console.log('📝 Язык определяется автоматически при каждой загрузке страницы');
+    console.log('📝 Первый визит: язык по браузеру | Повторный визит: сохраненный выбор');
     
     if (savedLanguage === 'EN') {
         currentLanguage = 'en';
