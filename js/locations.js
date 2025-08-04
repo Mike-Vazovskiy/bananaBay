@@ -13,7 +13,12 @@ document.querySelectorAll('.location__card').forEach(card => {
 
         // переключаем состояние кнопки
         btn.classList.toggle('open'); 
-        label.textContent = btn.classList.contains('open') ? 'Свернуть' : 'Подробнее об участке';
+        
+        // Получаем текущий язык и устанавливаем переведенный текст
+        const currentLang = localStorage.getItem('siteLanguage') === 'EN' ? 'en' : 'ru';
+        label.textContent = btn.classList.contains('open') ? 
+            getTranslation('lot_details_collapse', currentLang) : 
+            getTranslation('lot_details_more', currentLang);
     });
 });
 

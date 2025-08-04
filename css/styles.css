@@ -1640,6 +1640,9 @@ body {
   .hero__top_title {
     font-size: 50px;
   }
+  .hero__advants_item {
+    justify-content: start;
+  }
   .map .map-card .box img {
     border-radius: 30px;
     -o-object-fit: cover;
